@@ -121,7 +121,7 @@ h3 {
 .about {
     width: 100%;
     padding: 100px 0px;
-    background-color: #191919;
+    background-color: #232323;
 }
 
 .about img {
@@ -273,6 +273,7 @@ h3 {
     position: relative;
     overflow: hidden;
     text-align: center;
+    flex-shrink: 0;
 }
 
 .skill-card i {
