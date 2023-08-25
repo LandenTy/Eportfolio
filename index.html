@@ -6,23 +6,28 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 
+    <!-- Adding Favico and Custom Font -->
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Smooth Scrolling Functionality -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
 </head>
 <body>
 
     <!-- Home Page Section Start (LANDEN BARKER SECTION) -->
-    <div class="landen">
+    <div class="landen" id="home">
         <nav>
             <h2 class="logo">Landen<span>.</span>Barker</h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Certifications</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
             </ul>
             <a href="#" class="btn">Contact Me</a>
         </nav>
@@ -31,17 +36,19 @@
             <h1>Hey! I'm <span>Landen!</span></h1>
             <h3>I'm a Software Developer</h3>
 
+            <!--
             <div class="contact-form">
                 <form>
                     <input type="email" name="email" id="mail" placeholder="Enter Email Address...">
                     <input type="submit" name="submit" value="Submit">
                 </form>
             </div>
+            -->
         </div>
     </div>
 
     <!-- About Me Section -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="main">
             <img src="./img/Landen_Barker.png">
             <div class="about-text">
@@ -53,7 +60,7 @@
     </section>
 
     <!-- Projects Section -->
-    <div class="projects">
+    <div class="projects" id="projects">
         <div class="title">
             <h2>My Projects</h2>
         </div>
@@ -65,7 +72,7 @@
                 <div class="pra">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p>
-                        <a class="button" href="#">Read More</a>
+                        <a class="button" id="PTR-button">Read More</a>
                     </p>
                 </div>
             </div>
@@ -76,7 +83,7 @@
                 <div class="pra">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
+                        <a class="button" id="TII-button">Read More</a>
                     </p>
                 </div>
             </div>
@@ -87,16 +94,19 @@
                 <div class="pra">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
+                        <a class="button" id="TPT-button">Read More</a>
                     </p>
                 </div>
             </div>
+
+            <!-- All Popup Cards -->
+
         </div>
 
     </div>
 
     <!-- Skills Section -->
-    <div class="skills">
+    <div class="skills" id="skills">
         <div class="title-two">
             <h2>Skillset</h2>
         </div>
@@ -107,9 +117,6 @@
                 <h5>PyGame 3D Renderer</h5>
                 <div class="pra-two">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>
-                        <a class="button" href="#">Read More</a>
-                    </p>
                 </div>
             </div>
 
@@ -118,20 +125,6 @@
                 <h5>TechSmart TII</h5>
                 <div class="pra-two">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-bars"></i>
-                <h5>TechSmart Paint Tool</h5>
-                <div class="pra-two">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
-                    </p>
                 </div>
             </div>
         </div>
