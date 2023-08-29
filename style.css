@@ -133,6 +133,25 @@ h3 {
     width: 550px;
 }
 
+.about h3 {
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .waterloo-imgs {
+    width: 1330px;
+    max-width: 65%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .main {
     width: 1130px;
     max-width: 95%;
@@ -374,7 +393,7 @@ h3 {
     justify-content: center;
 }
 
-.contact-me p {
+.contact-me .contact-text {
     color: #fff;
     font-size: 30px;
     font-weight: bold;
@@ -396,4 +415,11 @@ h3 {
     background-color: transparent;
     border: 2px solid #f61059;
     cursor: pointer;
+}
+
+.sub {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
