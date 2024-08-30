@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const projectId = button.getAttribute("data-project");
       const overlay = document.getElementById(`${projectId}-overlay`);
       overlay.style.display = "block";
+      document.getElementById('video').play();
     });
   });
 
@@ -39,11 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const carousel = overlay.querySelector(".carousel");
     const images = carousel.querySelectorAll("img");
+    const videos = carousel.querySelectorAll("video");
     let currentIndex = 0;
 
     setInterval(() => {
       images[currentIndex].style.transform = "translateX(-100%)";
       currentIndex = (currentIndex + 1) % images.length;
+      currentIndex = (currentIndex + 1) % videos.length;
       images[currentIndex].style.transform = "translateX(0)";
     }, 3000);
   });
