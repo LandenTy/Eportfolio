@@ -306,7 +306,17 @@ h3 {
     transition: transform .3s ease-in-out;
 }
 
+.carousel video {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3 ease-in-out;
+}
+
 .carousel img:not(:first-child) {
+    margin-left: -100%;
+}
+
+.carousel video:not(:first-child) {
     margin-left: -100%;
 }
 
