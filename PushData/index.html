@@ -23,12 +23,45 @@
         tr:nth-child(even) {
             background-color: #f9f9f9;
         }
+        #buttonContainer {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .button {
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .button.checkmark {
+            background-color: #4CAF50; /* Green */
+        }
+        .button.xmark {
+            background-color: #f44336; /* Red */
+        }
+        .button img {
+            margin-right: 8px;
+        }
     </style>
 </head>
 <body>
     <h1>CSV Data and Contact Info</h1>
-    <div id="contactInfo">Loading...</div> <!-- For email and IP display -->
+    <div id="contactInfo">Loading...</div> <!-- For email display -->
     <div id="csvTable">Loading...</div> <!-- For CSV table display -->
+
+    <div id="buttonContainer">
+        <button class="button checkmark" onclick="pushData()">
+            <img src="https://img.icons8.com/material-outlined/24/checked.png" alt="Checkmark Icon"> Push Data
+        </button>
+        <button class="button xmark" onclick="discardData()">
+            <img src="https://img.icons8.com/material-outlined/24/delete-forever.png" alt="X Icon"> Discard Data
+        </button>
+    </div>
 
     <script>
         // Function to get CSV data and contact info from current URL
@@ -40,14 +73,13 @@
             const urlParams = new URLSearchParams(new URL(url).search);
             const dataParam = urlParams.get('data');
             const editorMail = urlParams.get('editormail');
-            const editorIp = urlParams.get('editorip');
 
             // Display contact info
             const contactInfoDiv = document.getElementById('contactInfo');
-            if (editorMail && editorIp) {
-                contactInfoDiv.innerHTML = `<p>Email: ${decodeURIComponent(editorMail)}</p><p>IP: ${decodeURIComponent(editorIp)}</p>`;
+            if (editorMail) {
+                contactInfoDiv.innerHTML = `<p>Email: ${decodeURIComponent(editorMail)}</p>`;
             } else {
-                contactInfoDiv.innerHTML = 'No contact info found in URL.';
+                contactInfoDiv.innerHTML = 'No email parameter found in URL.';
             }
 
             // Display CSV data
@@ -89,6 +121,17 @@
             } else {
                 csvTableDiv.innerHTML = 'No data parameter found in URL.';
             }
+        }
+
+        // Placeholder functions for button actions
+        function pushData() {
+            alert('Push Data button clicked');
+            // Add your push data logic here
+        }
+
+        function discardData() {
+            alert('Discard Data button clicked');
+            // Add your discard data logic here
         }
 
         // Run the function to display data
