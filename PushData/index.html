@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display CSV Data and Contact Info</title>
+    <title>CSV Data and Push Changes</title>
     <style>
         table {
             width: 100%;
@@ -123,18 +123,37 @@
             }
         }
 
-        // Placeholder functions for button actions
+        // Function to send push data request to Google Apps Script
         function pushData() {
-            alert('Push Data button clicked');
-            // Add your push data logic here
+            // URL of your Google Apps Script web app
+            const scriptUrl = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
+
+            // Send HTTP POST request to the Google Apps Script web app
+            fetch(scriptUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ buttonPressed: 'true' })
+            })
+            .then(response => response.text())
+            .then(result => {
+                console.log('Success:', result);
+                alert('Data push request sent successfully.');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Failed to send data push request.');
+            });
         }
 
+        // Placeholder function for discard action
         function discardData() {
             alert('Discard Data button clicked');
             // Add your discard data logic here
         }
 
-        // Run the function to display data
+        // Run the function to display data on page load
         getDataFromCurrentUrl();
     </script>
 </body>
