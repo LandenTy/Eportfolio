@@ -51,8 +51,8 @@
 </head>
 <body>
     <h1>CSV Data and Contact Info</h1>
-    <div id="contactInfo">Loading...</div> <!-- For email display -->
-    <div id="csvTable">Loading...</div> <!-- For CSV table display -->
+    <div id="contactInfo">Loading...</div>
+    <div id="csvTable">Loading...</div>
 
     <div id="buttonContainer">
         <button class="button checkmark" onclick="pushData()">
@@ -64,7 +64,6 @@
     </div>
 
     <script>
-        // Function to get CSV data and contact info from current URL
         function getDataFromCurrentUrl() {
             // Get current URL
             const url = window.location.href;
@@ -123,12 +122,9 @@
             }
         }
 
-        // Function to send push data request to Google Apps Script
         function pushData() {
-            // URL of your Google Apps Script web app
             const scriptUrl = 'https://script.google.com/a/macros/student.nisdtx.org/s/AKfycbyishAhy4C7kXIO580NEX-xVPWfLpqzHulash1VFAH-QeTOpay1sqIBl6KWy051IQ-8Dw/exec';
 
-            // Send HTTP POST request to the Google Apps Script web app
             fetch(scriptUrl, {
                 method: 'POST',
                 headers: {
@@ -136,18 +132,22 @@
                 },
                 body: JSON.stringify({ buttonPressed: 'true' })
             })
-            .then(response => response.text())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
             .then(result => {
                 console.log('Success:', result);
                 alert('Data push request sent successfully.');
             })
             .catch(error => {
                 console.error('Error:', error);
-                alert('Failed to send data push request.');
+                alert('Failed to send data push request. Check the console for details.');
             });
         }
 
-        // Placeholder function for discard action
         function discardData() {
             alert('Discard Data button clicked');
             // Add your discard data logic here
