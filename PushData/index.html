@@ -112,14 +112,13 @@
         function pushData() {
             const scriptUrl = 'https://script.google.com/macros/s/AKfycbwcXp9ovTej4Yn4_IqdZTrvBsBFcqVT-bEHoZbNmV1pU3CAk0CNjucxDyLwuaYyLlrX6A/exec'; // Replace with your actual deployment URL
         
-            fetch(scriptUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify({ buttonPressed: 'true' }),
-                mode: 'cors'
+            fetch(URL, {
+              redirect: "follow",
+              method: "POST",
+              body: JSON.stringify(DATA),
+              headers: {
+                "Content-Type": "text/plain;charset=utf-8",
+              },
             })
             .then(response => {
                 if (!response.ok) {
