@@ -112,14 +112,14 @@
         function pushData() {
             const scriptUrl = 'https://script.google.com/a/macros/student.nisdtx.org/s/AKfycbwcXp9ovTej4Yn4_IqdZTrvBsBFcqVT-bEHoZbNmV1pU3CAk0CNjucxDyLwuaYyLlrX6A/exec';
 
-            fetch(scriptUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify({ buttonPressed: 'true' })
-            })
+            fetch(URL, {
+      redirect: "follow",
+      method: "POST",
+      body: JSON.stringify(DATA),
+      headers: {
+        "Content-Type": "text/plain;charset=utf-8",
+      },
+    })
             .then(response => response.json())
             .then(result => {
                 console.log('Success:', result);
