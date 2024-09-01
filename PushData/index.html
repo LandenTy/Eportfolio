@@ -3,33 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display JSON Data</title>
+    <title>Display CSV Data</title>
 </head>
 <body>
-    <h1>JSON Data</h1>
-    <pre id="jsonOutput"></pre> <!-- This is where the JSON will be displayed -->
+    <h1>CSV Data</h1>
+    <pre id="csvOutput">Loading...</pre> <!-- Default text while loading -->
 
     <script>
-        // Function to decode URL components and parse JSON
-        function getJsonFromUrl() {
-            const url = 'https://landenbarker.com/PushData%data=%7B%22Sheet1%22%3A%5B%5B%22ID%22%2C%22First%20Name%22%2C%22Last%20Name%22%2C%22StuCo%20Points%22%5D%2C%5B%221010902%22%2C%22Landen%22%2C%22Barker%22%2C%2215%22%5D%5D%7D';
+        // Function to decode URL components and parse CSV
+        function getCsvFromUrl() {
+            const url = 'https://landenbarker.com/PushData?sheet=Sheet1&data=ID,First%20Name,Last%20Name,StuCo%20Points%0A1010902,Landen,Barker,15';
             
-            // Extract the JSON string from the URL
+            // Extract the CSV string from the URL
             const urlParams = new URLSearchParams(new URL(url).search);
             const dataParam = urlParams.get('data');
 
-            // Decode and parse JSON data
             if (dataParam) {
-                const decodedData = decodeURIComponent(dataParam);
-                const jsonData = JSON.parse(decodedData);
-                
-                // Display JSON in the pre element
-                document.getElementById('jsonOutput').textContent = JSON.stringify(jsonData, null, 2);
+                try {
+                    // Decode the URL-encoded CSV data
+                    const decodedData = decodeURIComponent(dataParam);
+                    
+                    // Convert CSV to a more readable format
+                    const csvLines = decodedData.split('\n');
+                    const headers = csvLines[0].split(',');
+                    const rows = csvLines.slice(1).map(line => line.split(','));
+
+                    // Format CSV data for display
+                    let csvDisplay = headers.join(' | ') + '\n' + rows.map(row => row.join(' | ')).join('\n');
+                    
+                    // Display CSV in the pre element
+                    document.getElementById('csvOutput').textContent = csvDisplay;
+                } catch (e) {
+                    document.getElementById('csvOutput').textContent = 'Error processing CSV: ' + e.message;
+                }
+            } else {
+                document.getElementById('csvOutput').textContent = 'No data parameter found in URL.';
             }
         }
 
-        // Run the function to display JSON data
-        getJsonFromUrl();
+        // Run the function to display CSV data
+        getCsvFromUrl();
     </script>
 </body>
 </html>
