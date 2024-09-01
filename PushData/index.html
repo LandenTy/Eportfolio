@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display CSV Data</title>
+    <title>Display CSV Data and Contact Info</title>
     <style>
         table {
             width: 100%;
@@ -26,19 +26,32 @@
     </style>
 </head>
 <body>
-    <h1>CSV Data as Table</h1>
-    <div id="csvTable">Loading...</div> <!-- Default text while loading -->
+    <h1>CSV Data and Contact Info</h1>
+    <div id="contactInfo">Loading...</div> <!-- For email and IP display -->
+    <div id="csvTable">Loading...</div> <!-- For CSV table display -->
 
     <script>
-        // Function to get CSV data from current URL
-        function getCsvFromCurrentUrl() {
+        // Function to get CSV data and contact info from current URL
+        function getDataFromCurrentUrl() {
             // Get current URL
             const url = window.location.href;
             
-            // Extract the CSV string from the URL
+            // Extract parameters from the URL
             const urlParams = new URLSearchParams(new URL(url).search);
             const dataParam = urlParams.get('data');
+            const editorMail = urlParams.get('editormail');
+            const editorIp = urlParams.get('editorip');
 
+            // Display contact info
+            const contactInfoDiv = document.getElementById('contactInfo');
+            if (editorMail && editorIp) {
+                contactInfoDiv.innerHTML = `<p>Email: ${decodeURIComponent(editorMail)}</p><p>IP: ${decodeURIComponent(editorIp)}</p>`;
+            } else {
+                contactInfoDiv.innerHTML = 'No contact info found in URL.';
+            }
+
+            // Display CSV data
+            const csvTableDiv = document.getElementById('csvTable');
             if (dataParam) {
                 try {
                     // Decode the URL-encoded CSV data
@@ -69,17 +82,17 @@
                     tableHtml += '</tbody></table>';
 
                     // Display the table in the div element
-                    document.getElementById('csvTable').innerHTML = tableHtml;
+                    csvTableDiv.innerHTML = tableHtml;
                 } catch (e) {
-                    document.getElementById('csvTable').innerHTML = 'Error processing CSV: ' + e.message;
+                    csvTableDiv.innerHTML = 'Error processing CSV: ' + e.message;
                 }
             } else {
-                document.getElementById('csvTable').innerHTML = 'No data parameter found in URL.';
+                csvTableDiv.innerHTML = 'No data parameter found in URL.';
             }
         }
 
-        // Run the function to display CSV data
-        getCsvFromCurrentUrl();
+        // Run the function to display data
+        getDataFromCurrentUrl();
     </script>
 </body>
 </html>
