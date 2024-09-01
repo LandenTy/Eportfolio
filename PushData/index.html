@@ -62,96 +62,89 @@
             <img src="https://img.icons8.com/material-outlined/24/delete-forever.png" alt="X Icon"> Discard Data
         </button>
     </div>
+
     <script>
-    function getDataFromCurrentUrl() {
-        const url = window.location.href;
-        const urlParams = new URLSearchParams(new URL(url).search);
-        const dataParam = urlParams.get('data');
-        const editorMail = urlParams.get('editormail');
+        function getDataFromCurrentUrl() {
+            const url = window.location.href;
+            const urlParams = new URLSearchParams(new URL(url).search);
+            const dataParam = urlParams.get('data');
+            const editorMail = urlParams.get('editormail');
 
-        const contactInfoDiv = document.getElementById('contactInfo');
-        if (editorMail) {
-            contactInfoDiv.innerHTML = `<p>Email: ${decodeURIComponent(editorMail)}</p>`;
-        } else {
-            contactInfoDiv.innerHTML = 'No email parameter found in URL.';
-        }
-
-        const csvTableDiv = document.getElementById('csvTable');
-        if (dataParam) {
-            try {
-                const decodedData = decodeURIComponent(dataParam);
-                const csvLines = decodedData.split('\n');
-                const headers = csvLines[0].split(',');
-                const rows = csvLines.slice(1).map(line => line.split(','));
-
-                let tableHtml = '<table><thead><tr>';
-                headers.forEach(header => {
-                    tableHtml += `<th>${header}</th>`;
-                });
-                tableHtml += '</tr></thead><tbody>';
-                
-                rows.forEach(row => {
-                    tableHtml += '<tr>';
-                    row.forEach(cell => {
-                        tableHtml += `<td>${cell}</td>`;
-                    });
-                    tableHtml += '</tr>';
-                });
-                tableHtml += '</tbody></table>';
-
-                csvTableDiv.innerHTML = tableHtml;
-                
-                // Store CSV data for pushData
-                window.csvData = { headers, rows };
-            } catch (e) {
-                csvTableDiv.innerHTML = 'Error processing CSV: ' + e.message;
+            const contactInfoDiv = document.getElementById('contactInfo');
+            if (editorMail) {
+                contactInfoDiv.innerHTML = <p>Email: ${decodeURIComponent(editorMail)}</p>;
+            } else {
+                contactInfoDiv.innerHTML = 'No email parameter found in URL.';
             }
-        } else {
-            csvTableDiv.innerHTML = 'No data parameter found in URL.';
-        }
-    }
 
-    function pushData() {
-        if (!window.csvData) {
-            alert('No data to push. Please make sure the CSV data is loaded.');
-            return;
+            const csvTableDiv = document.getElementById('csvTable');
+            if (dataParam) {
+                try {
+                    const decodedData = decodeURIComponent(dataParam);
+                    const csvLines = decodedData.split('\n');
+                    const headers = csvLines[0].split(',');
+                    const rows = csvLines.slice(1).map(line => line.split(','));
+
+                    let tableHtml = '<table><thead><tr>';
+                    headers.forEach(header => {
+                        tableHtml += <th>${header}</th>;
+                    });
+                    tableHtml += '</tr></thead><tbody>';
+                    
+                    rows.forEach(row => {
+                        tableHtml += '<tr>';
+                        row.forEach(cell => {
+                            tableHtml += <td>${cell}</td>;
+                        });
+                        tableHtml += '</tr>';
+                    });
+                    tableHtml += '</tbody></table>';
+
+                    csvTableDiv.innerHTML = tableHtml;
+                } catch (e) {
+                    csvTableDiv.innerHTML = 'Error processing CSV: ' + e.message;
+                }
+            } else {
+                csvTableDiv.innerHTML = 'No data parameter found in URL.';
+            }
         }
 
-        const { headers, rows } = window.csvData;
+        function pushData() {
+            const scriptUrl = 'https://script.google.com/a/macros/student.nisdtx.org/s/AKfycbwcXp9ovTej4Yn4_IqdZTrvBsBFcqVT-bEHoZbNmV1pU3CAk0CNjucxDyLwuaYyLlrX6A/exec';
+
+            const testData = {
+                "name": "John Doe",
+                "email": "john.doe@example.com",
+                "age": 30,
+                "city": "New York"
+            };
         
-        // Construct JSON based on CSV data
-        const jsonPayload = {
-            headers,
-            data: rows
-        };
+                    fetch(URL, {
+              redirect: "follow",
+              method: "POST",
+              body: JSON.stringify(testData),
+              headers: {
+                "Content-Type": "text/plain;charset=utf-8",
+              },
+            })
+            .then(response => response.json())
+            .then(result => {
+                console.log('Success:', result);
+                alert('Data push request sent successfully.');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Failed to send data push request. Check the console for details.');
+            });
+        }
 
-        const scriptUrl = 'https://script.google.com/a/macros/student.nisdtx.org/s/AKfycbwcXp9ovTej4Yn4_IqdZTrvBsBFcqVT-bEHoZbNmV1pU3CAk0CNjucxDyLwuaYyLlrX6A/exec';
+        function discardData() {
+            alert('Discard Data button clicked');
+            // Add your discard data logic here
+        }
 
-        fetch(scriptUrl, {
-            method: "POST",
-            body: JSON.stringify(jsonPayload),
-            headers: {
-                "Content-Type": "application/json;charset=utf-8",
-            },
-        })
-        .then(response => response.json())
-        .then(result => {
-            console.log('Success:', result);
-            alert('Data push request sent successfully.');
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('Failed to send data push request. Check the console for details.');
-        });
-    }
-
-    function discardData() {
-        alert('Discard Data button clicked');
-        // Add your discard data logic here
-    }
-
-    // Run the function to display data on page load
-    getDataFromCurrentUrl();
-</script>
+        // Run the function to display data on page load
+        getDataFromCurrentUrl();
+    </script>
 </body>
 </html>
