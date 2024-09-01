@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display JSON Data</title>
+</head>
+<body>
+    <h1>JSON Data</h1>
+    <pre id="jsonOutput"></pre> <!-- This is where the JSON will be displayed -->
+
+    <script>
+        // Function to decode URL components and parse JSON
+        function getJsonFromUrl() {
+            const url = 'https://landenbarker.com/PushData%data=%7B%22Sheet1%22%3A%5B%5B%22ID%22%2C%22First%20Name%22%2C%22Last%20Name%22%2C%22StuCo%20Points%22%5D%2C%5B%221010902%22%2C%22Landen%22%2C%22Barker%22%2C%2215%22%5D%5D%7D';
+            
+            // Extract the JSON string from the URL
+            const urlParams = new URLSearchParams(new URL(url).search);
+            const dataParam = urlParams.get('data');
+
+            // Decode and parse JSON data
+            if (dataParam) {
+                const decodedData = decodeURIComponent(dataParam);
+                const jsonData = JSON.parse(decodedData);
+                
+                // Display JSON in the pre element
+                document.getElementById('jsonOutput').textContent = JSON.stringify(jsonData, null, 2);
+            }
+        }
+
+        // Run the function to display JSON data
+        getJsonFromUrl();
+    </script>
+</body>
+</html>
