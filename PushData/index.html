@@ -5,52 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSV Data and Push Changes</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        #buttonContainer {
-            margin: 20px 0;
-            text-align: center;
-        }
-        .button {
-            border: none;
-            padding: 10px 20px;
-            margin: 0 10px;
-            font-size: 16px;
-            cursor: pointer;
-            color: white;
-            border-radius: 5px;
-            display: inline-flex;
-            align-items: center;
-        }
-        .button.checkmark {
-            background-color: #4CAF50; /* Green */
-        }
-        .button.xmark {
-            background-color: #f44336; /* Red */
-        }
-        .button img {
-            margin-right: 8px;
-        }
+        /* Your existing CSS */
     </style>
 </head>
 <body>
-    <h1>CSV Data and Contact Info</h1>
+    <h1>CSV Data and Push Changes</h1>
     <div id="contactInfo">Loading...</div>
     <div id="csvTable">Loading...</div>
 
@@ -64,17 +23,12 @@
     </div>
 
     <script>
-        // Function to get CSV data and contact info from the current URL
         function getDataFromCurrentUrl() {
-            // Get current URL
             const url = window.location.href;
-            
-            // Extract parameters from the URL
             const urlParams = new URLSearchParams(new URL(url).search);
             const dataParam = urlParams.get('data');
             const editorMail = urlParams.get('editormail');
 
-            // Display contact info
             const contactInfoDiv = document.getElementById('contactInfo');
             if (editorMail) {
                 contactInfoDiv.innerHTML = `<p>Email: ${decodeURIComponent(editorMail)}</p>`;
@@ -82,28 +36,20 @@
                 contactInfoDiv.innerHTML = 'No email parameter found in URL.';
             }
 
-            // Display CSV data
             const csvTableDiv = document.getElementById('csvTable');
             if (dataParam) {
                 try {
-                    // Decode the URL-encoded CSV data
                     const decodedData = decodeURIComponent(dataParam);
-                    
-                    // Convert CSV to HTML table
                     const csvLines = decodedData.split('\n');
                     const headers = csvLines[0].split(',');
                     const rows = csvLines.slice(1).map(line => line.split(','));
 
-                    // Create HTML table
                     let tableHtml = '<table><thead><tr>';
-                    
-                    // Add headers to table
                     headers.forEach(header => {
                         tableHtml += `<th>${header}</th>`;
                     });
                     tableHtml += '</tr></thead><tbody>';
                     
-                    // Add rows to table
                     rows.forEach(row => {
                         tableHtml += '<tr>';
                         row.forEach(cell => {
@@ -113,7 +59,6 @@
                     });
                     tableHtml += '</tbody></table>';
 
-                    // Display the table in the div element
                     csvTableDiv.innerHTML = tableHtml;
                 } catch (e) {
                     csvTableDiv.innerHTML = 'Error processing CSV: ' + e.message;
@@ -123,7 +68,6 @@
             }
         }
 
-        // Function to send data to Google Apps Script
         function pushData() {
             const scriptUrl = 'https://script.google.com/a/macros/student.nisdtx.org/s/AKfycbwcXp9ovTej4Yn4_IqdZTrvBsBFcqVT-bEHoZbNmV1pU3CAk0CNjucxDyLwuaYyLlrX6A/exec';
 
@@ -134,12 +78,7 @@
                 },
                 body: JSON.stringify({ buttonPressed: 'true' })
             })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.text();
-            })
+            .then(response => response.json())
             .then(result => {
                 console.log('Success:', result);
                 alert('Data push request sent successfully.');
@@ -150,7 +89,6 @@
             });
         }
 
-        // Function to handle discard data
         function discardData() {
             alert('Discard Data button clicked');
             // Add your discard data logic here
