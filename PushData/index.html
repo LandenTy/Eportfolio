@@ -64,6 +64,7 @@
     </div>
 
     <script>
+        // Function to get CSV data and contact info from the current URL
         function getDataFromCurrentUrl() {
             // Get current URL
             const url = window.location.href;
@@ -122,6 +123,7 @@
             }
         }
 
+        // Function to send data to Google Apps Script
         function pushData() {
             const scriptUrl = 'https://script.google.com/a/macros/student.nisdtx.org/s/AKfycbwcXp9ovTej4Yn4_IqdZTrvBsBFcqVT-bEHoZbNmV1pU3CAk0CNjucxDyLwuaYyLlrX6A/exec';
 
@@ -148,6 +150,7 @@
             });
         }
 
+        // Function to handle discard data
         function discardData() {
             alert('Discard Data button clicked');
             // Add your discard data logic here
