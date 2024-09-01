@@ -5,7 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSV Data and Push Changes</title>
     <style>
-        /* Your existing CSS */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        #buttonContainer {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .button {
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .button.checkmark {
+            background-color: #4CAF50; /* Green */
+        }
+        .button.xmark {
+            background-color: #f44336; /* Red */
+        }
+        .button img {
+            margin-right: 8px;
+        }
     </style>
 </head>
 <body>
