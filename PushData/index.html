@@ -110,16 +110,23 @@
         }
 
         function pushData() {
-            const scriptUrl = 'https://script.google.com/macros/s/AKfycbwcXp9ovTej4Yn4_IqdZTrvBsBFcqVT-bEHoZbNmV1pU3CAk0CNjucxDyLwuaYyLlrX6A/exec';
-
+            const scriptUrl = 'https://script.google.com/macros/s/AKfycbwcXp9ovTej4Yn4_IqdZTrvBsBFcqVT-bEHoZbNmV1pU3CAk0CNjucxDyLwuaYyLlrX6A/exec'; // Replace with your actual deployment URL
+        
             fetch(scriptUrl, {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
                 },
-                body: JSON.stringify({ buttonPressed: 'true' })
+                body: JSON.stringify({ buttonPressed: 'true' }),
+                mode: 'cors'
             })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
             .then(result => {
                 console.log('Success:', result);
                 alert('Data push request sent successfully.');
@@ -129,7 +136,7 @@
                 alert('Failed to send data push request. Check the console for details.');
             });
         }
-
+        
         function discardData() {
             alert('Discard Data button clicked');
             // Add your discard data logic here
