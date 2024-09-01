@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display CSV Data</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
-    <h1>CSV Data</h1>
-    <pre id="csvOutput">Loading...</pre> <!-- Default text while loading -->
+    <h1>CSV Data as Table</h1>
+    <div id="csvTable">Loading...</div> <!-- Default text while loading -->
 
     <script>
         // Function to decode URL components and parse CSV
@@ -23,21 +43,37 @@
                     // Decode the URL-encoded CSV data
                     const decodedData = decodeURIComponent(dataParam);
                     
-                    // Convert CSV to a more readable format
+                    // Convert CSV to HTML table
                     const csvLines = decodedData.split('\n');
                     const headers = csvLines[0].split(',');
                     const rows = csvLines.slice(1).map(line => line.split(','));
 
-                    // Format CSV data for display
-                    let csvDisplay = headers.join(' | ') + '\n' + rows.map(row => row.join(' | ')).join('\n');
+                    // Create HTML table
+                    let tableHtml = '<table><thead><tr>';
                     
-                    // Display CSV in the pre element
-                    document.getElementById('csvOutput').textContent = csvDisplay;
+                    // Add headers to table
+                    headers.forEach(header => {
+                        tableHtml += `<th>${header}</th>`;
+                    });
+                    tableHtml += '</tr></thead><tbody>';
+                    
+                    // Add rows to table
+                    rows.forEach(row => {
+                        tableHtml += '<tr>';
+                        row.forEach(cell => {
+                            tableHtml += `<td>${cell}</td>`;
+                        });
+                        tableHtml += '</tr>';
+                    });
+                    tableHtml += '</tbody></table>';
+
+                    // Display the table in the div element
+                    document.getElementById('csvTable').innerHTML = tableHtml;
                 } catch (e) {
-                    document.getElementById('csvOutput').textContent = 'Error processing CSV: ' + e.message;
+                    document.getElementById('csvTable').innerHTML = 'Error processing CSV: ' + e.message;
                 }
             } else {
-                document.getElementById('csvOutput').textContent = 'No data parameter found in URL.';
+                document.getElementById('csvTable').innerHTML = 'No data parameter found in URL.';
             }
         }
 
