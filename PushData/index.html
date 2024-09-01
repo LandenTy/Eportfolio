@@ -30,9 +30,10 @@
     <div id="csvTable">Loading...</div> <!-- Default text while loading -->
 
     <script>
-        // Function to decode URL components and parse CSV
-        function getCsvFromUrl() {
-            const url = 'https://landenbarker.com/PushData?sheet=Sheet1&data=ID,First%20Name,Last%20Name,StuCo%20Points%0A1010902,Landen,Barker,15';
+        // Function to get CSV data from current URL
+        function getCsvFromCurrentUrl() {
+            // Get current URL
+            const url = window.location.href;
             
             // Extract the CSV string from the URL
             const urlParams = new URLSearchParams(new URL(url).search);
@@ -78,7 +79,7 @@
         }
 
         // Run the function to display CSV data
-        getCsvFromUrl();
+        getCsvFromCurrentUrl();
     </script>
 </body>
 </html>
