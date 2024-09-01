@@ -110,22 +110,17 @@
         }
 
         function pushData() {
-            const scriptUrl = 'https://script.google.com/macros/s/AKfycbwcXp9ovTej4Yn4_IqdZTrvBsBFcqVT-bEHoZbNmV1pU3CAk0CNjucxDyLwuaYyLlrX6A/exec'; // Replace with your actual deployment URL
-        
-            fetch(URL, {
-              redirect: "follow",
-              method: "POST",
-              body: JSON.stringify(DATA),
-              headers: {
-                "Content-Type": "text/plain;charset=utf-8",
-              },
+            const scriptUrl = 'https://script.google.com/a/macros/student.nisdtx.org/s/AKfycbwcXp9ovTej4Yn4_IqdZTrvBsBFcqVT-bEHoZbNmV1pU3CAk0CNjucxDyLwuaYyLlrX6A/exec';
+
+            fetch(scriptUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({ buttonPressed: 'true' })
             })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok ' + response.statusText);
-                }
-                return response.json();
-            })
+            .then(response => response.json())
             .then(result => {
                 console.log('Success:', result);
                 alert('Data push request sent successfully.');
@@ -135,7 +130,7 @@
                 alert('Failed to send data push request. Check the console for details.');
             });
         }
-        
+
         function discardData() {
             alert('Discard Data button clicked');
             // Add your discard data logic here
