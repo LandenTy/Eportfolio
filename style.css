@@ -534,3 +534,38 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+
+.leadership-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+}
+
+.leadership-card {
+    background-color: #f8f8f8; /* Light background */
+    border: 1px solid #ccc; /* Border around cards */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure images don't overflow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.leadership-card:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.leadership-card img {
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.leadership-card h3 {
+    margin: 10px 0 5px; /* Adjust margins */
+    color: #333; /* Darker text color */
+}
+
+.leadership-card p {
+    margin: 0 10px 10px; /* Margin for paragraph */
+    color: #666; /* Lighter text color */
+}
