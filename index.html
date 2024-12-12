@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Adding Favico and Custom Font -->
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Importing Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Smooth Scrolling Functionality -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <!-- Home Page Section Start (LANDEN BARKER SECTION) -->
+    <div class="landen" id="home">
+        <nav>
+            <h2 class="logo">Landen<span>.</span>Barker</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#leadership">Leadership</a></li>              
+                <li><a href="#service-section">Technical Skills</a></li>
+                <li><a href="#certifications">Professional Skills</a></li>
+            </ul>
+            <a href="mailto:LandenBarker1@gmail.com" class="btn">Contact Me</a>
+        </nav>
+
+        <div class="content">
+            <h1>Hey! I'm <span>Landen!</span></h1>
+            <h3>I'm a Software Developer</h3>
+
+            <!--
+            <div class="contact-form">
+                <form>
+                    <input type="email" name="email" id="mail" placeholder="Enter Email Address...">
+                    <input type="submit" name="submit" value="Submit">
+                </form>
+            </div>
+            -->
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="main">
+            <img src="./img/Landen_Barker.png">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5><span>Software & Middleware Developer</span></h5>
+                <p>
+                   Hey! My name is Landen Barker. I'm currently 17 years old and are a Junior in High School.
+                   My hobbies include programming (of which I've been doing for nearly a decade), and 
+                   outdoor activites. Currently, I am working towards achieving between a 3.7 and 4.0 GPA, in hopes 
+                   of being accepted into the University of Texas Dallas so I can persue Computer Science. I enjoy 
+                   teaching others how to program, and helping my friends when they run into bugs with their code. 
+                   One of my goals for this year is to  get a Computer Science club up and running, so I can teach 
+                   others how to write programs and games using the C Language.
+                </p>
+                <a class="contact-button" href="resume/Resume.pdf">View Resume</a>
+            </div>
+        </div>
+        <br><h3>Waterloo University:</h3>
+        <div class="waterloo-imgs">
+            <img src="img/Waterloo1.jpg">
+            <img src="img/Waterloo2.jpeg">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <div class="projects" id="projects">
+        <div class="title">
+            <h2>My Projects</h2>
+        </div>
+
+        <div class="box">
+            <div class="card">
+                <i class="fas fa-bars"></i>
+                <h5>PyGame 3D Renderer</h5>
+                <div class="pra">
+                    <p>This had been an ongoing project, that I had initially begun back in pre-summer of 2022. I was taking 'Introduction to Computer Scie...</p>
+                    <p>
+                        <a class="project-button" data-project="project1">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-bars"></i>
+                <h5>TechSmart Paint Tool</h5>
+                <div class="pra">
+                    <p>In my school's Comp. Sci. cirriculum, we used a program called 'TechSmart'. Basically, TechSmart doesn't allow user-upload; Meaning...</p>
+                    <p style="text-align: center;">
+                        <a class="project-button" data-project="project2">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-bars"></i>
+                <h5>TechSmart TII</h5>
+                <div class="pra">
+                    <p>This was my second attempt at importing images with TechSmart. This time, instead of a user creating their own image, they can...</p>
+                    <p style="text-align: center;">
+                        <a class="project-button" data-project="project3">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- All Popup Cards -->
+        <div class="project-card">
+            <div class="overlay" id="project1-overlay">
+                <button class="close-button">X</button><br><br><br>
+                <div class="carousel">
+                    <img src="img/Projects/TTR1.png">
+                    <img src="img/Projects/TTR2.png">
+                    <img src="img/Projects/TTR3.png">
+                </div>
+                <br><h2>PyGame 3D Renderer</h2>
+                <h6>02/26/2023</h6><br>
+                <p>This had been an ongoing project, that I had initially begun back in pre-summer of 2022. I was taking 'Introduction to
+                    Computer Science' in 8th grade. Over the course of 2 years, I've worked on the project more and more; And I feel like
+                    I'm now at a stage where I feel comfortable releasing my Engine to the public view. For more information, visit the
+                    <a href="https://github.com/LandenTy/GeometricEngine">Github Page</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="overlay" id="project2-overlay">
+                <button class="close-button">X</button><br><br><br>
+                <div class="carousel">
+                    <img src="img/Projects/TPT1.png">
+                    <img src="img/Projects/TPT2.png">
+                    <img src="img/Projects/TPT3.png">
+                </div>
+                <br><h2>TechSmart Paint Tool (TPaint)</h2>
+                <h6>11/29/2022</h6><br>
+                <p>In my school's Comp. Sci. cirriculum, we used a program called 'TechSmart'. Basically, TechSmart doesn't allow
+                    user-upload; Meaning, I cannot upload my own images to use in projects. This project allows users to create their
+                    own images, which then are saved in text-files. Those files can then be loaded with a custom 'ImageViewer' module
+                    (Must be included in the project). For more information, visit the  
+                    <a href="https://github.com/LandenTy/TechSmart-Image-Editor">Github Page</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="overlay" id="project3-overlay">
+                <button class="close-button">X</button><br><br><br>
+                <div class="carousel">
+                    <img src="img/Projects/TII1.png">
+                    <img src="img/Projects/TII3.png">
+                    <img src="img/Projects/TII2.png">
+                </div>
+                <br><h2>TechSmart Image Importer (TII)</h2>
+                <h6>06/24/2023</h6><br>
+                <p>For this project, instead of user-created images,
+                    users will upload an image to a local-transcriptor. The program will then decode each image pixel, into an RGB value for PyGame
+                    to read. For more information, visit the
+                    <a href="https://github.com/LandenTy/TechSmart-Image-Importer">Github Page</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="overlay" id="project4-overlay">
+                <button class="close-button">X</button><br><br><br>
+                <div class="carousel">
+                    <img src="img/Projects/TII1.png">
+                    <img src="img/Projects/TII3.png">
+                    <img src="img/Projects/TII2.png">
+                </div>
+                <br><h2>Computer Science Club</h2>
+                <h6>08/24/2024</h6><br>
+                <p>I started this club to teach students the basic of algorithmic design and computer sciences using C++. By the end of the course
+                    students will have learned how to create a basic game in DirectX11 alongside the Win32 API. Students will be able to build
+                    their game for CD-ROM and distribute it amongst their friends and family.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="overlay" id="project5-overlay">
+                <button class="close-button">X</button><br><br><br>
+                <div class="carousel">
+                    <video controls autoplay>
+                        <source src="vid/Direct3D-Lighting.mkv">
+                    </video>
+                </div>
+                <br>FormulaOne</h2>
+                <h6>07/27/2024</h6><br>
+                <p>This is my first Direct3D Engine compatible with Windows 98 and onwards, targeted towards the development of applications on older
+                    hardware. It features 3 Renderers in DirectX11, DirectX8 and OpenGL 2.4, support for builds to Floppy Disk are coming soon. I am
+                    still working on adding 3D Model support and creating the graphical engine. The project is still in active development.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Projects Section -->
+    <section class="leadership" id="leadership">
+        <div class="header service-header">
+            <h2>Leadership Experience</h2>
+        </div>
+        <div class="leadership-container">
+            <div class="leadership-card">
+                <img src="img/hfalls.jpg" alt="Hawaiian Falls">
+                <h3>Food and Beverage Manager at Hawaiian Falls</h3>
+                <p>Oversaw daily operations, managed a team, and ensured high-quality service in a fast-paced environment.</p>
+            </div>
+            <div class="leadership-card">
+                <img src="img/csclub.png" alt="Computer Science Club">
+                <h3>Leader of Computer Science Club</h3>
+                <p>Organized workshops, mentored peers, and led projects to foster interest in programming and technology.</p>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Services Section -->
+    <section class="service-section" id="service-section">
+
+        <!-- Header -->
+        <div class="header service-header">
+            <h2>Technical Skills</h2>
+            <p>I worked with many fields in my development carreer. Here a the most significant ones:</p><br><br><br><br>
+        </div>
+
+        <!-- Services Main -->
+        <div class="container">
+
+            <div class="service-card">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="0.5em" viewBox="0 0 640 512">
+                        <path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/>
+                    </svg>
+                </div>
+                <h2>Web Development</h2>
+                <p>I am at an intermediate skill-level in Web Development. HTML was the first language I learned, so I'm the
+                    most comfortable with it.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" height=".5em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z"/></svg>
+                </div>
+                <h2>Game Development</h2>
+                <p>I didn't begin learning Gamedev until after learning Webdev. But I would still rate myself as an intermediate developer. 
+                    My first project was a simple platformer written in SDL2.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" height=".5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 32C28.7 32 0 60.7 0 96v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm48 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM64 288c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V352c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm56 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                </div>
+                <h2>Backend Development</h2>
+                <p>I am very new to Backend Development, the only project I've used Backend-Dev with was a 
+                    chatting application using PHP, and MySQL. Thus, I rate myself a novice Backend-Developer.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" height=".5em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64H240l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H346.7L336 416H512c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM512 64V288H64V64H512z"/></svg>
+                </div>
+                <h2>Software Development</h2>
+                <p>Writing Software and Tools has been something I've been interested in since Day 1. But most of my software has been written in HTML. So I categorize myself at Intermediate skill-level, as only a few projects have been Desktop apllications.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" height=".5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M443.9 128v256L218 512 0 384V169.7l87.6 45.1v117l133.5 75.5 135.8-75.5v-151l-101.1-57.6 87.6-53.1L443.9 128zM308.6 49.1L223.8 0l-88.6 54.8 86 47.3 87.4-53z"/></svg>
+                </div>
+                <h2>UI/UX Design</h2>
+                <p>Almost every project I work on, I sketch out in Figma beforehand. When it comes to websites, software, etc. Everything
+                    is written out using Figma. Then, I take the idea from figma, and make the actual project look good.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="0.5em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 64H384v64H256V64zM240 0c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h48v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32H80c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H240c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H192V288H448v32H400c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48H560c26.5 0 48-21.5 48-48V368c0-26.5-21.5-48-48-48H512V288h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V192h48c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H240zM96 448V384H224v64H96zm320-64H544v64H416V384z"/></svg>
+                </div>
+                <h2>Networking (C++)</h2>
+                <p>I would rate myself at a novice skill-level for Networking. I can write boilerplate
+                    code for a TCP Socket & Client using the WinSock library.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="header service-header">
+            <h2>Professional Skills</h2>
+            <p>I worked with many fields in my development career. Here are the most significant ones:</p>
+        </div>
+    
+        <div class="certification-grid">
+            <div class="certification-card">
+                <img src="img/osha.jpg" alt="Certification 1" class="certification-image">
+                <h3>OSHA 10</h3>
+                <p>The OSHA 10 Certification trains individuals on essential workplace safety practices and hazard recognition. It emphasizes key safety topics to promote a safe working environment.</p>
+            </div>
+            <div class="certification-card">
+                <img src="img/excel_associate.png" alt="Certification 2" class="certification-image">
+                <h3>Excel Assocaite</h3>
+                <p>The Excel Associate Certification verifies skills in data management and analysis using Microsoft Excel. It covers functions, formulas, and data visualization techniques to enhance productivity.</p>
+            </div>
+            <div class="certification-card">
+                <img src="img/pptx.png" alt="Certification 3" class="certification-image">
+                <h3>PowerPoint Associate</h3>
+                <p>The PowerPoint Certification showcases proficiency in creating effective presentations. It covers slide design, multimedia integration, and presentation delivery skills.</p>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Contact Section -->
+    <div class="contact-me">
+        <p class="contact-text">Have an idea that needs building?</p>
+        <a class="contact-button" href="mailto:Landen.Barker@student.nisdtx.org">Lets Talk</a>
+
+        <br><br><div class="sub">
+            <p>Landen.Barker@student.nisdtx.org</p>
+            <br><p>https://tinyurl.com/2vh8r97n</p>
+        </div>
+    </div>
+
+</body>
+</html>
