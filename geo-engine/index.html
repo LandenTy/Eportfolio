@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Engine</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Importing the Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="Images/logo.png" alt="Geo Logo"> <!-- Replace with your logo image -->
+        </div>
+        <div class="navbar-hamburger" id="hamburger-icon">
+            ☰
+        </div>
+        <ul class="navbar-links" id="navbar-links">
+            <li><a href="#welcome">Welcome</a></li>
+            <li><a href="#about-geo">About</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="https://discord.gg/gGabrrN8zQ">Community</a></li>
+            
+            <!-- User icon at the end of the navbar on larger screens -->
+            <!--<li class="user-menu" id="user-menu">
+                <img src="Images/user-icon.png" alt="User Icon" class="user-icon" id="user-icon">
+                <div class="user-dropdown" id="user-dropdown">
+                    <a href="#sign-in" class="dropdown-item">Sign In</a>
+                    <a href="#register" class="dropdown-item">Register</a>
+                </div>
+            </li>-->
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Inspire Creativity.</h1>
+            <p>Write Once, Launch Everywhere</p>
+            <a href="downloads.html"><button class="download-btn" id="download-btn">Download</button></a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about-geo">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>What is Geo?</h2>
+                <p>Geo is the world’s first game engine designed specifically for retro computing, making video games accessible to everyone, regardless of their hardware. With support for Windows 7, 8, 8.1, 10, and 11—and future compatibility for Windows 98, 98SE, ME, 2000, XP, and Vista in progress—Geo bridges the gap between cutting-edge game development and legacy systems.</p>
+                <p>Our intuitive node-based editor, Weave, empowers developers to bring their ideas to life effortlessly. With Geo, you can create once and run your games seamlessly across platforms, from the latest software to the most nostalgic systems. Whether you’re crafting modern masterpieces or retro-inspired adventures, Geo has you covered.</p>
+            </div>
+            <div class="about-video">
+                <video controls>
+                    <source src="path/to/geo-in-action.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scrolling Projects Collage -->
+    <section id="projects">
+        <div class="loop--slider">
+            <div class="loop--slide--track">
+                <div class="loop--slide">
+                    <div class="card">
+                        <a href="https://sketchfab.com/3d-models/office-room-cc0c3c4a13f9415ea521ffb3fb5efa73" target="_blank">
+                            <img src="Images/GeoProjects/1.png" height="100" width="250" alt="Project 1" />
+                        </a>
+                    </div>
+                </div>
+                <div class="loop--slide">
+                    <div class="card">
+                        <a href="https://www.cryengine.com/asset-db/product/crytek/sponza-sample-scene" target="_blank">
+                            <img src="Images/GeoProjects/2.png" height="100" width="250" alt="Project 2" />
+                        </a>
+                    </div>
+                </div>
+                <div class="loop--slide">
+                    <div class="card">
+                        <a href="https://sketchfab.com/3d-models/ancient-corinth-peirene-fountain-d7a85f6096584f02817ff255c16608e0" target="_blank">
+                            <img src="Images/GeoProjects/3.png" height="100" width="250" alt="Project 3" />
+                        </a>
+                    </div>
+                </div>
+                <div class="loop--slide">
+                    <div class="card">
+                        <a href="https://sketchfab.com/3d-models/office-room-cc0c3c4a13f9415ea521ffb3fb5efa73" target="_blank">
+                            <img src="Images/GeoProjects/1.png" height="100" width="250" alt="Project 1" />
+                        </a>
+                    </div>
+                </div>
+                <div class="loop--slide">
+                    <div class="card">
+                        <a href="https://www.cryengine.com/asset-db/product/crytek/sponza-sample-scene" target="_blank">
+                            <img src="Images/GeoProjects/2.png" height="100" width="250" alt="Project 2" />
+                        </a>
+                    </div>
+                </div>
+                <div class="loop--slide">
+                    <div class="card">
+                        <a href="https://sketchfab.com/3d-models/ancient-corinth-peirene-fountain-d7a85f6096584f02817ff255c16608e0" target="_blank">
+                            <img src="Images/GeoProjects/3.png" height="100" width="250" alt="Project 3" />
+                        </a>
+                    </div>
+                </div>
+                <div class="loop--slide">
+                    <div class="card">
+                        <a href="https://sketchfab.com/3d-models/office-room-cc0c3c4a13f9415ea521ffb3fb5efa73" target="_blank">
+                            <img src="Images/GeoProjects/1.png" height="100" width="250" alt="Project 1" />
+                        </a>
+                    </div>
+                </div>
+                <div class="loop--slide">
+                    <div class="card">
+                        <a href="https://www.cryengine.com/asset-db/product/crytek/sponza-sample-scene" target="_blank">
+                            <img src="Images/GeoProjects/2.png" height="100" width="250" alt="Project 2" />
+                        </a>
+                    </div>
+                </div>
+                <div class="loop--slide">
+                    <div class="card">
+                        <a href="https://sketchfab.com/3d-models/ancient-corinth-peirene-fountain-d7a85f6096584f02817ff255c16608e0" target="_blank">
+                            <img src="Images/GeoProjects/3.png" height="100" width="250" alt="Project 3" />
+                        </a>
+                    </div>
+                </div>
+                <div class="loop--slide">
+                    <div class="card">
+                        <a href="https://www.cryengine.com/asset-db/product/crytek/sponza-sample-scene" target="_blank">
+                            <img src="Images/GeoProjects/2.png" height="100" width="250" alt="Project 2" />
+                        </a>
+                    </div>
+                </div>
+                <div class="loop--slide">
+                    <div class="card">
+                        <a href="https://www.cryengine.com/asset-db/product/crytek/sponza-sample-scene" target="_blank">
+                            <img src="Images/GeoProjects/2.png" height="100" width="250" alt="Project 2" />
+                        </a>
+                    </div>
+                </div>
+                <div class="loop--slide">
+                    <div class="card">
+                        <a href="https://sketchfab.com/3d-models/ancient-corinth-peirene-fountain-d7a85f6096584f02817ff255c16608e0" target="_blank">
+                            <img src="Images/GeoProjects/3.png" height="100" width="250" alt="Project 3" />
+                        </a>
+                    </div>
+                </div>
+                <div class="loop--slide">
+                    <div class="card">
+                        <a href="https://sketchfab.com/3d-models/office-room-cc0c3c4a13f9415ea521ffb3fb5efa73" target="_blank">
+                            <img src="Images/GeoProjects/1.png" height="100" width="250" alt="Project 1" />
+                        </a>
+                    </div>
+                </div>
+                <div class="loop--slide">
+                    <div class="card">
+                        <a href="https://www.cryengine.com/asset-db/product/crytek/sponza-sample-scene" target="_blank">
+                            <img src="Images/GeoProjects/2.png" height="100" width="250" alt="Project 2" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>      
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="footer-content">
+            <!-- Logo and Info -->
+            <div class="footer-logo-info">
+                <div class="logo-title">
+                    <img src="Images/logo.png" alt="GeoEngine Logo" />
+                    <h3>GeoEngine</h3>
+                </div>
+                <p>Accessible Gaming For All.</p>
+                <p><i class="fas fa-phone"></i> Phone: +1 (940) 268-8482</p>
+                <p><i class="fas fa-envelope"></i> Email: LandenBarker1@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/landen.barker.52" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/LandenBarkerGames" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                    <a href="https://x.com/_LBGames" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.youtube.com/@landenbarkergames" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                </div>
+            </div>            
+    
+            <!-- Legal Terms -->
+            <div class="footer-legal">
+                <h3>Legal Terms</h3>
+                <ul>
+                    <li><a href="Legal/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="Legal/eula.html">EULA</a></li>
+                    <li><a href="Legal/terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact Us -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <form action="https://formspree.io/f/xannalkz" method="POST">
+                    <div class="form-field">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>                
+            </div>
+        </div>
+        <p>&copy; 2025 LandenBarker.com. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
