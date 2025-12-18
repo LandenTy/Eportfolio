@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TinyEngine — Cross‑Platform Game Engine</title>
+<meta name="description" content="TinyEngine is a modern, lightweight game engine built with C++, Qt6, and OpenGL. Cross‑platform with a tiny runtime and robust editor.">
+
+<style>
+  :root{
+    --bg:#0a0c10;
+    --bg-soft:#0f1217;
+    --card:#151a20;
+    --fg:#cfd6dd;
+    --muted:#94a3af;
+    --accent:#42ffd2;
+    --accent-2:#3ad6ff;
+    --accent-deep:#00c896;
+    --stroke:#222a33;
+    --shadow:rgba(0,0,0,0.6);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:Inter,Segoe UI,system-ui,-apple-system,Arial,sans-serif;line-height:1.65}
+  a{color:var(--accent-2);text-decoration:none}
+  h1,h2,h3{margin:0 0 .5rem}
+  p{margin:0 0 1rem;color:var(--muted)}
+
+  .container{max-width:1200px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
+
+  /* Header */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:1000;
+    backdrop-filter:saturate(140%) blur(10px);
+    background:linear-gradient(180deg,rgba(10,12,16,.9),rgba(10,12,16,.6));
+    border-bottom:1px solid var(--stroke);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand-logo{
+    width:28px;height:28px;border-radius:6px;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    box-shadow:0 0 16px rgba(58,214,255,.35);
+  }
+  .brand h1{font-size:18px;font-weight:700;letter-spacing:.2px}
+  .links{display:flex;align-items:center;gap:18px}
+  .links a{color:var(--fg);font-weight:600}
+  .links a:hover{color:var(--accent)}
+  .cta-nav{
+    padding:.55rem .95rem;border-radius:8px;font-weight:700;
+    color:#021110;background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    box-shadow:0 0 18px rgba(66,255,210,.35);
+  }
+
+  /* Hero */
+  .hero{
+    position:relative;min-height:92vh;padding-top:104px;display:flex;align-items:center;overflow:hidden;
+  }
+  .hero-bg{
+    position:absolute;inset:0;z-index:0;overflow:hidden;
+  }
+  .hero .container{
+    display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;position:relative;z-index:2;
+  }
+  @media(max-width:980px){.hero .container{grid-template-columns:1fr;text-align:center}}
+  .hero-title{
+    font-size:56px;font-weight:900;letter-spacing:.3px;line-height:1.05;
+    background:linear-gradient(180deg,#f7f9fb,var(--fg));-webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero-sub{font-size:18px;color:var(--muted);max-width:640px;margin-top:12px}
+  .hero-actions{display:flex;gap:14px;margin-top:22px;flex-wrap:wrap;justify-content:flex-start}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;border:1px solid var(--stroke);
+    padding:.9rem 1.2rem;border-radius:10px;font-weight:700;color:var(--fg);background:var(--card);
+    transition:.2s
+  }
+  .btn-primary{
+    color:#071316;background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    border:none;box-shadow:0 12px 40px rgba(58,214,255,.25),0 0 24px rgba(66,255,210,.2)
+  }
+  .btn:hover{transform:translateY(-2px);box-shadow:0 15px 50px rgba(58,214,255,.3)}
+
+  .hero-shot{
+    border-radius:14px;overflow:hidden;border:1px solid var(--stroke);
+    box-shadow:0 20px 60px var(--shadow);background:linear-gradient(180deg,var(--bg-soft),#0b0e12);
+    transform:rotateY(-5deg) rotateX(2deg);
+  }
+  .hero-shot img{display:block;width:100%;height:auto}
+
+  .grid{
+    position:absolute;left:50%;bottom:-12%;
+    width:1600px;height:1200px;transform:translateX(-50%) perspective(1000px) rotateX(32deg);
+    background-image:linear-gradient(var(--stroke) 1px, transparent 1px),linear-gradient(90deg, var(--stroke) 1px, transparent 1px);
+    background-size:64px 64px;opacity:.25;filter:drop-shadow(0 10px 30px rgba(0,0,0,.45));
+    will-change:transform,background-position;
+    animation:gridFlow 28s linear infinite;
+  }
+  @keyframes gridFlow{from{background-position:0 0}to{background-position:0 64px}}
+  .glow-blob{
+    position:absolute;inset:auto auto 10% 50%;transform:translateX(-50%);
+    width:600px;height:600px;border-radius:50%;
+    background:radial-gradient(circle at 30% 30%, rgba(66,255,210,.18), transparent 55%),
+               radial-gradient(circle at 70% 70%, rgba(58,214,255,.18), transparent 55%);
+    filter:blur(40px);opacity:.6
+  }
+
+  /* Sections with angled dividers */
+  section{padding:72px 0;position:relative;z-index:1}
+  section:after{
+    content:"";position:absolute;bottom:0;left:0;width:100%;height:40px;
+    background:linear-gradient(to top,var(--bg-soft),transparent);z-index:0;
+  }
+  .section-header{margin-bottom:36px}
+  .section-header h2{font-size:32px;font-weight:900;color:#ecf2f6}
+  .section-header p{color:var(--muted);max-width:720px}
+
+  /* Features - alternating layout */
+  .feature-row{display:flex;align-items:center;gap:40px;margin-bottom:56px;flex-wrap:wrap}
+  .feature-row.reverse{flex-direction:row-reverse}
+  .feature-text{flex:1;min-width:280px}
+  .feature-img{flex:1;min-width:280px;border-radius:14px;overflow:hidden;border:1px solid var(--stroke);box-shadow:0 12px 40px rgba(0,0,0,.35)}
+  .feature-img img{width:100%;display:block}
+  
+  /* Showcase */
+  .showcase-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+  .tile{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--stroke);background:#0b0e12;box-shadow:0 12px 34px rgba(0,0,0,.4)}
+  .tile img{display:block}
+  .tile .label{
+    position:absolute;left:12px;bottom:12px;padding:.35rem .6rem;border-radius:8px;
+    backdrop-filter:blur(6px);background:rgba(10,12,16,.55);border:1px solid var(--stroke);
+    color:var(--fg);font-size:12px;font-weight:700
+  }
+
+  /* Chips for tech highlights */
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+  .chip{
+    font-size:12px;font-weight:700;color:#9fb0bd;
+    border:1px dashed #24303a;border-radius:999px;padding:.35rem .6rem;background:#0c1015
+  }
+
+  /* CTA download section */
+  .cta-section{
+    background:radial-gradient(1200px 600px at 20% 120%, rgba(66,255,210,.15), transparent),
+               radial-gradient(1100px 500px at 80% 120%, rgba(58,214,255,.15), transparent),
+               linear-gradient(180deg,#0c1015,#0a0c10);
+    border-top:1px solid var(--stroke);padding:96px 24px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px
+  }
+  .cta-text h2{font-size:28px;font-weight:900;color:#ecf2f6}
+  .cta-text p{color:var(--muted);max-width:600px}
+  .cta-actions{display:flex;gap:12px;flex-wrap:wrap}
+  .btn-ghost{background:transparent;border:1px solid var(--stroke)}
+
+  footer{padding:28px 24px;color:#8b9aa8;text-align:center}
+</style>
+</head>
+<body>
+
+<!-- SVG gradient for icons -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="gradAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#42ffd2"/>
+      <stop offset="100%" stop-color="#3ad6ff"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <div class="brand-logo" aria-hidden="true"></div>
+      <h1>TinyEngine</h1>
+    </div>
+    <nav class="links">
+      <a href="#features">Features</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#editor">TinyEditor</a>
+      <a href="#tech">Tech</a>
+      <a href="#downloads" class="cta-nav">Download</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg">
+    <div class="grid"></div>
+    <div class="glow-blob" aria-hidden="true"></div>
+  </div>
+  <div class="container">
+    <div>
+      <h1 class="hero-title">Build boldly with a tiny runtime</h1>
+      <p class="hero-sub">
+        Cross‑platform game engine built with C++, Qt6, and OpenGL. Streamlined LPK asset format,
+        ECS architecture, and a custom Lua bytecode interpreter — all powered by an 8086‑targeted runtime.
+      </p>
+      <div class="hero-actions">
+        <a href="#downloads" class="btn btn-primary">Download TinyEditor (60.25 MB)</a>
+        <a href="#features" class="btn">Explore features</a>
+      </div>
+    </div>
+    <div class="hero-shot">
+      <img src="images/tinyeditor.png" alt="TinyEditor interface screenshot"/>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="container">
+    <div class="section-header">
+      <h2>Engine Features</h2>
+      <p>Designed for speed, clarity, and control — from a lean runtime to a robust editor and asset pipeline.</p>
+    </div>
+
+    <!-- Alternating features -->
+    <div class="feature-row">
+      <div class="feature-text">
+        <h3>LPK streamed format</h3>
+        <p>Binary, chunked container streamed at runtime: ASET, LGIC, OBJS, COMP, and SCNE.</p>
+        <div class="chips">
+          <span class="chip">ASET</span><span class="chip">LGIC</span><span class="chip">OBJS</span><span class="chip">COMP</span><span class="chip">SCNE</span>
+        </div>
+      </div>
+      <div class="feature-img">
+        <img src="images/lpk.png" alt="LPK format illustration"/>
+      </div>
+    </div>
+
+    <div class="feature-row reverse">
+      <div class="feature-text">
+        <h3>Lean 8086 runtime</h3>
+        <p>Just 39 kB. PCX images, audio, physics, GUI, lighting, and scene management — tuned for precision.</p>
+        <div class="chips">
+          <span class="chip">39 kB</span><span class="chip">8086</span><span class="chip">Lighting</span><span class="chip">Physics</span>
+        </div>
+      </div>
+      <div class="feature-img">
+        <img src="images/runtime.png" alt="Runtime illustration"/>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <div class="feature-text">
+        <h3>ECS architecture</h3>
+        <p>Entities, Components, Systems — cameras, scenes, and a custom Lua bytecode interpreter.</p>
+        <div class="chips">
+          <span class="chip">Cameras</span><span class="chip">Scenes</span><span class="chip">Lua Bytecode</span>
+        </div>
+      </div>
+      <div class="feature-img">
+        <img src="images/ecs.png" alt="ECS illustration"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="showcase">
+  <div class="container">
+    <div class="section-header">
+      <h2>Made with TinyEngine</h2>
+      <p>From retro‑styled visuals to modern tooling, TinyEngine empowers focused, performant projects.</p>
+    </div>
+    <div class="showcase-grid">
+      <div class="tile">
+        <img src="images/showcase1.png" alt="Showcase project 1"/>
+        <span class="label">Demo scene · Lighting + GUI</span>
+      </div>
+      <div class="tile">
+        <img src="images/showcase2.png" alt="Showcase project 2"/>
+        <span class="label">Physics test · ECS Systems</span>
+      </div>
+      <div class="tile">
+        <img src="images/showcase3.png" alt="Showcase project 3"/>
+        <span class="label">PCX pipeline · Masks & transforms</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="downloads" class="cta-section">
+  <div class="cta-text">
+    <h2>Start building with TinyEngine</h2>
+    <p>Download the editor, run the ultra‑small runtime, and ship your game. Tiny footprint. Big control.</p>
+  </div>
+  <div class="cta-actions">
+    <a class="btn btn-primary" href="downloads/tinyeditor.zip">Download TinyEditor (60.25 MB)</a>
+    <a class="btn btn-ghost" href="downloads/runtime.zip">Download Runtime (39 kB)</a>
+    <a class="btn" href="#tech">View tech details</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <small>&copy; 2025 TinyEngine. Built with C++, Qt6, and OpenGL.</small>
+  </div>
+</footer>
+
+<script>
+  // Smooth scroll
+  document.querySelectorAll('header .links a:not(.cta-nav)').forEach(a=>{
+    a.addEventListener('click',e=>{
+      const href=a.getAttribute('href');
+      if(href.startsWith('#')){
+        e.preventDefault();
+        document.querySelector(href)?.scrollIntoView({behavior:'smooth',block:'start'});
+      }
+    });
+  });
+
+  // Parallax grid
+  const grid=document.querySelector('.grid');
+  let rafId=null;
+  const state={mx:0,my:0,tx:0,ty:0};
+  window.addEventListener('mousemove',e=>{
+    const w=window.innerWidth,h=window.innerHeight;
+    state.mx=(e.clientX/w-0.5);
+    state.my=(e.clientY/h-0.5);
+    if(!rafId){ rafId=requestAnimationFrame(step); }
+  });
+  function step(){
+    rafId=null;
+    state.tx+= (state.mx-state.tx)*0.08;
+    state.ty+= (state.my-state.ty)*0.08;
+    const rotY=state.tx*6;
+    const rotX=32 + state.ty*4;
+    grid.style.transform=`translateX(-50%) perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+  }
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    window.removeEventListener('mousemove',()=>{});
+    grid.style.transform='translateX(-50%) perspective(1000px) rotateX(32deg)';
+  }
+</script>
+</body>
+</html>
