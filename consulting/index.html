@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barker Strategic Ops | Enterprise Infrastructure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0e14;
+            --glass: rgba(255, 255, 255, 0.03);
+            --accent: #00d4ff;
+            --text: #e0e0e0;
+            --muted: #888;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            scroll-behavior: smooth;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: rgba(10, 14, 20, 0.95);
+            backdrop-filter: blur(15px);
+            position: fixed;
+            top: 0; width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a { color: white; text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+
+        /* Hero */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 5%;
+            background: radial-gradient(circle at center, #112233 0%, #0a0e14 100%);
+        }
+        h1 { font-size: clamp(2.5rem, 8vw, 5rem); margin-bottom: 1rem; letter-spacing: -3px; line-height: 1; }
+        .accent { color: var(--accent); }
+        .hero p { font-size: clamp(1rem, 4vw, 1.25rem); color: var(--muted); max-width: 650px; margin-bottom: 2rem; }
+
+        /* Stats Banner */
+        .stats-banner {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 4rem 10%;
+            background: var(--accent);
+            color: #0a0e14;
+            gap: 2rem;
+            position: relative;
+            z-index: 10;
+        }
+        .stat-item h2 { font-size: 3.5rem; margin: 0; font-weight: 900; }
+        .stat-item p { font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin: 0; }
+
+        /* Section Global */
+        section { padding: 6rem 5%; max-width: 1200px; margin: auto; }
+        h2 { font-size: 2.8rem; letter-spacing: -1.5px; margin-bottom: 1.5rem; }
+
+        /* Animated Terminal */
+        .terminal {
+            background: #000;
+            border-radius: 12px;
+            padding: 2rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+            margin: 2rem 0 4rem 0;
+            text-align: left;
+            min-height: 220px;
+        }
+        .terminal-line { margin-bottom: 8px; min-height: 1.2rem; }
+
+        /* Methodology Cards */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        .step-card {
+            background: var(--glass);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: all 0.4s ease;
+        }
+        .step-card:hover { 
+            border-color: var(--accent); 
+            transform: translateY(-10px);
+            background: rgba(0, 212, 255, 0.02);
+        }
+        .step-card h3 { color: var(--accent); margin-top: 0; }
+
+        /* Presentation Section (New) */
+        .presentation-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            background: var(--glass);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 2rem;
+        }
+        .presentation-container iframe {
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            width: 100%; height: 100%;
+            border: none;
+        }
+
+        /* Team Section */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .member-card {
+            background: var(--glass);
+            padding: 3rem 2rem;
+            border-radius: 24px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: 0.3s;
+        }
+        .member-card:hover { border-color: var(--accent); }
+        .avatar {
+            width: 80px; height: 80px;
+            background: linear-gradient(135deg, var(--accent), #00509d);
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+        }
+
+        /* Buttons & Forms */
+        .btn {
+            background: var(--accent); color: #0a0e14; padding: 1.2rem 2.5rem; border: none; border-radius: 50px; 
+            font-weight: 800; cursor: pointer; display: inline-block; text-decoration: none; transition: 0.3s;
+        }
+        .btn:hover { box-shadow: 0 0 25px rgba(0, 212, 255, 0.5); transform: scale(1.02); }
+
+        input, textarea { 
+            width: 100%; padding: 1rem; margin-bottom: 1rem; 
+            background: rgba(255,255,255,0.05); border: 1px solid #333; 
+            color: white; border-radius: 10px; outline: none;
+        }
+        input:focus { border-color: var(--accent); }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            h1 { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div style="font-size: 1.5rem; font-weight: 900;">BARKER<span class="accent">.OPS</span></div>
+    <div class="nav-links">
+        <a href="#strategy">Strategy</a>
+        <a href="#method">Methodology</a>
+        <a href="#briefing">Presentation</a>
+        <a href="#team">Team</a>
+        <a href="roi.html">ROI Tool</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Operational <span class="accent">Excellence.</span></h1>
+    <p>Barker Strategic Operations delivers high-performance Ubuntu-based infrastructure designed for the specific demands of Hawaiian Falls.</p>
+    <div style="display: flex; gap: 15px;">
+        <a href="#strategy" class="btn">View Strategy</a>
+        <a href="roi.html" class="btn" style="background: transparent; border: 2px solid var(--accent); color: var(--accent);">ROI Tool</a>
+    </div>
+</section>
+
+<div class="stats-banner">
+    <div class="stat-item"><h2>85%</h2><p>Cost Reduction</p></div>
+    <div class="stat-item"><h2>0.0s</h2><p>Downtime Logged</p></div>
+    <div class="stat-item"><h2>4.0.1</h2><p>PCI Compliance</p></div>
+</div>
+
+<section id="strategy">
+    <h2>The <span class="accent">Secure Boot</span></h2>
+    <p style="font-size: 1.2rem; color: var(--muted); max-width: 800px;">We solve the legacy hardware crisis. By migrating Hawaiian Falls to an open-source Ubuntu ecosystem, we eliminate predatory licensing fees while hardening systems against digital and physical threats.</p>
+    
+    <div class="terminal" id="terminal">
+        <div class="terminal-line" id="line1"></div>
+        <div class="terminal-line" id="line2"></div>
+        <div class="terminal-line" id="line3"></div>
+        <div class="terminal-line" id="line4"></div>
+        <div class="terminal-line" id="line5"></div>
+    </div>
+</section>
+
+<section id="method" style="background: rgba(255,255,255,0.01);">
+    <h2>The <span class="accent">Methodology</span></h2>
+    <div class="process-grid">
+        <div class="step-card">
+            <h3>01. Risk Analysis</h3>
+            <p>Every deployment begins with a TRA to map physical kitchen hazards and digital POS vulnerabilities.</p>
+        </div>
+        <div class="step-card">
+            <h3>02. System Imaging</h3>
+            <p>We deploy custom Ubuntu 24.04 LTS environments, locked into P2PE-compliant kiosk modes.</p>
+        </div>
+        <div class="step-card">
+            <h3>03. Fail-Safe Boot</h3>
+            <p>Our dual-boot strategy ensures zero-loss transition, keeping terminals operational 24/7/365.</p>
+        </div>
+    </div>
+</section>
+
+<section id="briefing">
+    <h2>Executive <span class="accent">Briefing</span></h2>
+    <p style="margin-bottom: 2rem; color: var(--muted);">Review our strategic roadmap and full technical analysis below.</p>
+    
+    <div class="presentation-container">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSUUsJCVsMdLj0vVis1R05YGcdgLao-6Bzrt2vY-eLqW2oO7oKJYBOC1l9tUJyrAVEMgDk7ehY3jwBp/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="1920" height="1109" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+    
+    <div style="text-align: center;">
+        <a href="pmbs.pptx" class="btn" style="background: transparent; border: 2px solid var(--accent); color: var(--accent);">Download Deck (.pptx)</a>
+    </div>
+</section>
+
+<section id="team">
+    <h2>The <span class="accent">Experts...</span></h2>
+    <div class="team-grid">
+        <div class="member-card">
+            <div class="avatar"></div>
+            <h3>Landen Barker</h3>
+            <p class="accent" style="font-weight:700;">Senior Consultant</p>
+            <p style="color: var(--muted); font-size: 0.9rem;">Lead architect for Linux deployment and encrypted infrastructure standards.</p>
+        </div>
+        <div class="member-card">
+            <div class="avatar" style="background: white;"></div>
+            <h3>Fabien Carbo-Ruiz</h3>
+            <p class="accent" style="font-weight:700;">Project Manager</p>
+            <p style="color: var(--muted); font-size: 0.9rem;">Specialist in physical hazard mitigation and EMT-certified safety protocols.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 style="text-align:center;">Initiate <span class="accent">Inquiry</span></h2>
+    <form onsubmit="event.preventDefault(); alert('Message Sent!');">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <textarea rows="4" placeholder="Operational challenges..." required></textarea>
+        <button type="submit" class="btn" style="width:100%">Send Message</button>
+    </form>
+</section>
+
+<footer style="text-align: center; padding: 4rem; color: var(--muted); border-top: 1px solid rgba(255,255,255,0.05);">
+    <p>&copy; 2026 Barker Strategic Operations</p>
+</footer>
+
+<script>
+    const lines = [
+        { id: "line1", text: "[SECURE_BOOT]: Initializing Barker.OS v2.4...", color: "#0f0" },
+        { id: "line2", text: "[SYSTEM]: Loading encrypted Kiosk environment...", color: "#fff" },
+        { id: "line3", text: "[PCI_DSS]: Running Requirement 4.0.1 validation... [SUCCESS]", color: "#fff" },
+        { id: "line4", text: "[NETWORK]: Dual-Boot Redundancy Active (Fail-Safe: Enabled)", color: "#fff" },
+        { id: "line5", text: "[STATUS]: Strategic Operations Online.", color: "#0f0" }
+    ];
+
+    let currentLine = 0;
+    function typeLine() {
+        if (currentLine < lines.length) {
+            const lineObj = lines[currentLine];
+            const element = document.getElementById(lineObj.id);
+            if(!element) return;
+            element.style.color = lineObj.color;
+            let charIndex = 0;
+            const interval = setInterval(() => {
+                element.textContent += lineObj.text[charIndex];
+                charIndex++;
+                if (charIndex === lineObj.text.length) {
+                    clearInterval(interval);
+                    currentLine++;
+                    setTimeout(typeLine, 500);
+                }
+            }, 30);
+        }
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        if(entries[0].isIntersecting) {
+            typeLine();
+            observer.disconnect();
+        }
+    }, { threshold: 0.5 });
+    observer.observe(document.getElementById('terminal'));
+</script>
+
+</body>
+</html>
