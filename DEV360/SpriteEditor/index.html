@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tilemap Editor</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:wght@400;700&display=swap');
+  :root{
+    --bg:#0d0d0d;--surface:#141414;--raised:#1c1c1c;--border:#2a2a2a;
+    --accent:#00ff9f;--accent2:#ff6b35;--dim:#555;--text:#e0e0e0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--text);font-family:'IBM Plex Mono',monospace;
+    min-height:100vh;display:flex;flex-direction:column;align-items:center;
+    padding:24px 16px 48px;gap:20px;}
+  h1{font-family:'VT323',monospace;font-size:2.8rem;color:var(--accent);
+    letter-spacing:0.08em;line-height:1;}
+  h1 span{color:var(--accent2);}
+  .subtitle{font-size:0.6rem;color:var(--dim);letter-spacing:0.2em;text-transform:uppercase;}
+
+  /* ── Setup panel ── */
+  .setup{background:var(--surface);border:1px solid var(--border);border-radius:6px;
+    padding:16px 20px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+  .setup label{font-size:0.65rem;color:var(--dim);letter-spacing:0.12em;text-transform:uppercase;margin-right:6px;}
+  .setup input[type=number]{width:56px;background:var(--raised);border:1px solid var(--border);
+    border-radius:4px;color:var(--accent);font-family:'IBM Plex Mono',monospace;
+    font-size:0.85rem;padding:4px 8px;text-align:center;outline:none;}
+  .setup input[type=number]:focus{border-color:var(--accent);}
+  .btn{padding:8px 16px;border-radius:4px;border:none;font-family:'IBM Plex Mono',monospace;
+    font-size:0.7rem;font-weight:700;cursor:pointer;letter-spacing:0.06em;
+    text-transform:uppercase;transition:opacity 0.12s,transform 0.1s;}
+  .btn:active{transform:scale(0.97);}
+  .btn-primary{background:var(--accent);color:#0d0d0d;}
+  .btn-primary:hover{opacity:0.85;}
+  .btn-secondary{background:transparent;border:1px solid var(--border);color:var(--dim);}
+  .btn-secondary:hover{border-color:var(--accent2);color:var(--accent2);}
+
+  /* ── Main layout ── */
+  .editor{display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;justify-content:center;}
+
+  /* ── Tilemap canvas area ── */
+  .map-wrap{display:flex;flex-direction:column;gap:8px;align-items:center;}
+  #mapCanvas{image-rendering:pixelated;cursor:crosshair;border:1px solid var(--border);
+    border-radius:2px;display:block;}
+  .map-info{font-size:0.6rem;color:var(--dim);letter-spacing:0.1em;}
+
+  /* ── Side panel ── */
+  .panel{background:var(--surface);border:1px solid var(--border);border-radius:6px;
+    padding:16px;width:200px;display:flex;flex-direction:column;gap:14px;}
+  .panel-label{font-size:0.58rem;letter-spacing:0.16em;text-transform:uppercase;
+    color:var(--dim);border-bottom:1px solid var(--border);padding-bottom:4px;margin-bottom:2px;}
+
+  /* Tile palette */
+  .palette-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;}
+  .tile-swatch{aspect-ratio:1;border-radius:3px;cursor:pointer;border:2px solid transparent;
+    transition:transform 0.1s,border-color 0.1s;position:relative;}
+  .tile-swatch:hover{transform:scale(1.1);}
+  .tile-swatch.active{border-color:#fff;}
+  .tile-swatch.empty-tile{background:repeating-conic-gradient(#1c1c1c 0% 25%,#111 0% 50%) 0 0/8px 8px;}
+
+  /* Tools */
+  .tools{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
+  .tool-btn{padding:7px 4px;border-radius:4px;border:1px solid var(--border);
+    background:var(--raised);color:var(--dim);font-family:'IBM Plex Mono',monospace;
+    font-size:0.62rem;cursor:pointer;transition:all 0.12s;text-align:center;}
+  .tool-btn.active{background:var(--accent);color:#0d0d0d;border-color:var(--accent);font-weight:700;}
+  .tool-btn:hover:not(.active){border-color:var(--accent);color:var(--accent);}
+
+  /* ── Output ── */
+  .output-area{width:100%;max-width:760px;}
+  .out-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+  .out-header span{font-family:'VT323',monospace;font-size:1.4rem;color:var(--accent2);}
+  .copy-btn{background:var(--raised);border:1px solid var(--border);color:var(--dim);
+    font-family:'IBM Plex Mono',monospace;font-size:0.6rem;padding:5px 12px;
+    border-radius:4px;cursor:pointer;letter-spacing:0.08em;text-transform:uppercase;transition:all 0.12s;}
+  .copy-btn:hover{border-color:var(--accent);color:var(--accent);}
+  #dataOut{background:#070707;border:1px solid var(--border);border-radius:6px;
+    padding:14px;font-size:0.62rem;line-height:1.7;word-break:break-all;
+    color:var(--accent);min-height:48px;font-family:'IBM Plex Mono',monospace;}
+  .out-meta{font-size:0.58rem;color:var(--dim);margin-top:6px;letter-spacing:0.08em;}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h1>TILE<span>MAP</span></h1>
+  <div class="subtitle">4×4 pixel tiles · flat export · Scratch ready</div>
+</div>
+
+<!-- Setup -->
+<div class="setup">
+  <div>
+    <label>Map width</label>
+    <input type="number" id="mapW" value="8" min="1" max="64">
+    <label style="margin-left:4px">tiles</label>
+  </div>
+  <div>
+    <label>Map height</label>
+    <input type="number" id="mapH" value="8" min="1" max="64">
+    <label style="margin-left:4px">tiles</label>
+  </div>
+  <button class="btn btn-primary" onclick="initMap()">Build Map</button>
+  <button class="btn btn-secondary" onclick="clearMap()">Clear</button>
+</div>
+
+<!-- Editor -->
+<div class="editor" id="editorArea" style="display:none">
+  <div class="map-wrap">
+    <canvas id="mapCanvas"></canvas>
+    <div class="map-info" id="mapInfo"></div>
+  </div>
+
+  <div class="panel">
+    <div>
+      <div class="panel-label">Tile Palette</div>
+      <div class="palette-grid" id="palette"></div>
+    </div>
+    <div>
+      <div class="panel-label">Tool</div>
+      <div class="tools">
+        <div class="tool-btn active" id="btnPaint" onclick="setTool('paint')">Paint</div>
+        <div class="tool-btn" id="btnErase" onclick="setTool('erase')">Erase</div>
+        <div class="tool-btn" id="btnFill" onclick="setTool('fill')">Fill</div>
+        <div class="tool-btn" id="btnPick" onclick="setTool('pick')">Pick</div>
+      </div>
+    </div>
+    <div>
+      <div class="panel-label">Selected</div>
+      <div id="selectedPreview" style="width:100%;height:40px;border-radius:4px;
+        border:1px solid var(--border);image-rendering:pixelated;background:#111;"></div>
+      <div id="selectedLabel" style="font-size:0.6rem;color:var(--dim);margin-top:4px;text-align:center;"></div>
+    </div>
+    <button class="btn btn-primary" style="width:100%" onclick="exportMap()">Export Data String</button>
+  </div>
+</div>
+
+<!-- Output -->
+<div class="output-area" id="outputArea" style="display:none">
+  <div class="out-header">
+    <span>Data String</span>
+    <button class="copy-btn" onclick="copyData()">Copy</button>
+  </div>
+  <div id="dataOut"></div>
+  <div class="out-meta" id="outMeta"></div>
+</div>
+
+<script>
+// ── Tile definitions (base colors, each 4×4 = 16 pixels, all same color) ──
+const TILES = [
+  { name:'empty',   color: null },
+  { name:'white',   color:'#ffffff' },
+  { name:'black',   color:'#000000' },
+  { name:'red',     color:'#e84040' },
+  { name:'orange',  color:'#ff8c1a' },
+  { name:'yellow',  color:'#ffcc00' },
+  { name:'lime',    color:'#44dd44' },
+  { name:'green',   color:'#1a8c1a' },
+  { name:'cyan',    color:'#00ccff' },
+  { name:'blue',    color:'#2255ee' },
+  { name:'purple',  color:'#8833cc' },
+  { name:'pink',    color:'#ff55aa' },
+  { name:'brown',   color:'#884422' },
+  { name:'tan',     color:'#ccaa77' },
+  { name:'gray',    color:'#888888' },
+  { name:'ltgray',  color:'#cccccc' },
+];
+
+const TILE_PX = 4;   // pixels per tile
+const DISPLAY_SCALE = 10; // screen pixels per tile-pixel → each tile = 40×40px on screen
+
+let mapW = 8, mapH = 8;
+let tileMap = [];  // tileMap[row][col] = tile index
+let selectedTile = 1;
+let tool = 'paint';
+let painting = false;
+
+// ── Build palette ──
+const paletteEl = document.getElementById('palette');
+TILES.forEach((t, idx) => {
+  const s = document.createElement('div');
+  s.className = 'tile-swatch' + (idx === 0 ? ' empty-tile' : '') + (idx === selectedTile ? ' active' : '');
+  if (t.color) s.style.background = t.color;
+  s.title = t.name;
+  s.onclick = () => selectTile(idx);
+  paletteEl.appendChild(s);
+});
+
+function selectTile(idx) {
+  selectedTile = idx;
+  document.querySelectorAll('.tile-swatch').forEach((s,i) => s.classList.toggle('active', i===idx));
+  updateSelectedPreview();
+  if (tool === 'erase' || tool === 'pick') setTool('paint');
+}
+
+function updateSelectedPreview() {
+  const prev = document.getElementById('selectedPreview');
+  const t = TILES[selectedTile];
+  if (!t.color) {
+    prev.style.background = '';
+    prev.className = '';
+    prev.style.cssText = 'width:100%;height:40px;border-radius:4px;border:1px solid var(--border);' +
+      'background:repeating-conic-gradient(#1c1c1c 0% 25%,#111 0% 50%) 0 0/8px 8px;';
+  } else {
+    prev.style.cssText = 'width:100%;height:40px;border-radius:4px;border:1px solid var(--border);background:'+t.color;
+  }
+  document.getElementById('selectedLabel').textContent = t.name;
+}
+
+// ── Init map ──
+function initMap() {
+  mapW = Math.max(1, Math.min(64, parseInt(document.getElementById('mapW').value)||8));
+  mapH = Math.max(1, Math.min(64, parseInt(document.getElementById('mapH').value)||8));
+  tileMap = Array.from({length:mapH}, () => Array(mapW).fill(0));
+  document.getElementById('editorArea').style.display = 'flex';
+  document.getElementById('outputArea').style.display = 'none';
+  setupCanvas();
+  renderMap();
+  updateSelectedPreview();
+}
+
+function clearMap() {
+  tileMap = Array.from({length:mapH}, () => Array(mapW).fill(0));
+  renderMap();
+  document.getElementById('outputArea').style.display = 'none';
+}
+
+// ── Canvas ──
+function setupCanvas() {
+  const canvas = document.getElementById('mapCanvas');
+  const tileScreenSize = TILE_PX * DISPLAY_SCALE;
+  canvas.width  = mapW * tileScreenSize;
+  canvas.height = mapH * tileScreenSize;
+  canvas.style.width  = canvas.width  + 'px';
+  canvas.style.height = canvas.height + 'px';
+  document.getElementById('mapInfo').textContent =
+    mapW+'×'+mapH+' tiles  ·  '+(mapW*TILE_PX)+'×'+(mapH*TILE_PX)+' pixels  ·  '+
+    (mapW*mapH*TILE_PX*TILE_PX)+' total pixels in export';
+  canvas.onmousedown = e => { painting=true; handleClick(e); };
+  canvas.onmousemove = e => { if(painting) handleClick(e); };
+  canvas.onmouseup   = () => painting=false;
+  canvas.onmouseleave= () => painting=false;
+}
+
+function getTileCoord(e) {
+  const canvas = document.getElementById('mapCanvas');
+  const rect = canvas.getBoundingClientRect();
+  const tileScreenSize = TILE_PX * DISPLAY_SCALE;
+  const col = Math.floor((e.clientX - rect.left)  / tileScreenSize);
+  const row = Math.floor((e.clientY - rect.top)   / tileScreenSize);
+  return {col: Math.max(0,Math.min(mapW-1,col)), row: Math.max(0,Math.min(mapH-1,row))};
+}
+
+function handleClick(e) {
+  e.preventDefault();
+  const {col, row} = getTileCoord(e);
+  if (tool==='pick') {
+    selectTile(tileMap[row][col]);
+    setTool('paint');
+    return;
+  }
+  if (tool==='fill') {
+    floodFill(row, col, tileMap[row][col], tool==='erase'?0:selectedTile);
+    renderMap(); return;
+  }
+  tileMap[row][col] = tool==='erase' ? 0 : selectedTile;
+  renderTile(col, row);
+}
+
+function floodFill(r, c, target, replacement) {
+  if(r<0||r>=mapH||c<0||c>=mapW) return;
+  if(tileMap[r][c]!==target||target===replacement) return;
+  tileMap[r][c]=replacement;
+  floodFill(r-1,c,target,replacement);floodFill(r+1,c,target,replacement);
+  floodFill(r,c-1,target,replacement);floodFill(r,c+1,target,replacement);
+}
+
+// ── Rendering ──
+function renderMap() {
+  for(let r=0;r<mapH;r++) for(let c=0;c<mapW;c++) renderTile(c,r);
+}
+
+function renderTile(col, row) {
+  const canvas = document.getElementById('mapCanvas');
+  const ctx = canvas.getContext('2d');
+  const tileScreenSize = TILE_PX * DISPLAY_SCALE;
+  const x = col * tileScreenSize;
+  const y = row * tileScreenSize;
+  const tIdx = tileMap[row][col];
+  const tile = TILES[tIdx];
+
+  if (!tile.color) {
+    // checkerboard for empty
+    ctx.fillStyle = '#111';
+    ctx.fillRect(x, y, tileScreenSize, tileScreenSize);
+    ctx.fillStyle = '#1a1a1a';
+    for(let py=0;py<TILE_PX;py++) for(let px=0;px<TILE_PX;px++) {
+      if((px+py)%2===0) ctx.fillRect(x+px*DISPLAY_SCALE, y+py*DISPLAY_SCALE, DISPLAY_SCALE, DISPLAY_SCALE);
+    }
+  } else {
+    ctx.fillStyle = tile.color;
+    ctx.fillRect(x, y, tileScreenSize, tileScreenSize);
+  }
+  // grid line
+  ctx.strokeStyle = '#1f1f1f';
+  ctx.lineWidth = 0.5;
+  ctx.strokeRect(x+0.25, y+0.25, tileScreenSize-0.5, tileScreenSize-0.5);
+}
+
+// ── Tool ──
+function setTool(t) {
+  tool = t;
+  ['paint','erase','fill','pick'].forEach(id => {
+    const el = document.getElementById('btn'+id.charAt(0).toUpperCase()+id.slice(1));
+    if(el) el.classList.toggle('active', id===t);
+  });
+}
+
+// ── Export ──
+function exportMap() {
+  const pixelW = mapW * TILE_PX;
+  const pixelH = mapH * TILE_PX;
+  const pixelCount = pixelW * pixelH;
+
+  // Header: mapW,mapH,pixelCount,mapPixelW
+  const header = [mapW, mapH, pixelCount, pixelW].join(',');
+
+  // Rasterize pixel data
+  const pixels = [];
+  for(let tr=0; tr<mapH; tr++) {
+    for(let py=0; py<TILE_PX; py++) {
+      for(let tc=0; tc<mapW; tc++) {
+        const tIdx = tileMap[tr][tc];
+        const color = TILES[tIdx].color;
+        const hex = color ? color.replace('#','').toUpperCase() : '000000';
+        for(let px=0; px<TILE_PX; px++) pixels.push(hex);
+      }
+    }
+  }
+
+  const pixelData = pixels.join(',');
+  const full = header + '|' + pixelData;
+
+  document.getElementById('dataOut').textContent = full;
+  document.getElementById('outMeta').textContent =
+    'header: '+header+'  ·  '+pixelCount+' pixels  ·  '+pixelW+'×'+pixelH+' pixel map';
+  document.getElementById('outputArea').style.display = 'block';
+}
+
+function copyData() {
+  const val = document.getElementById('dataOut').textContent;
+  if(!val) return;
+  navigator.clipboard.writeText(val).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    btn.textContent = 'Copied!';
+    setTimeout(()=>btn.textContent='Copy', 1500);
+  });
+}
+
+// init
+initMap();
+updateSelectedPreview();
+</script>
+</body>
+</html>
