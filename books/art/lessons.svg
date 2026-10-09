@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 200" width="220" height="200">
+  <g id="lessons">
+  <g transform="rotate(-8 110 130)">
+  <rect x="40" y="50" width="130" height="110" rx="6" fill="#48cae4" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(-2 110 130)">
+  <rect x="48" y="60" width="130" height="110" rx="6" fill="#ffbe0b" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(5 110 130)">
+  <rect x="56" y="70" width="130" height="110" rx="6" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="121" y="96" font-family="Caveat, 'Comic Sans MS', cursive" font-size="26" fill="#1e1b18" text-anchor="middle" xml:space="preserve">Lesson 3</text>
+  <rect x="70" y="112" width="96" height="6" rx="3" fill="#adb5bd"/>
+  <rect x="70" y="126" width="76" height="6" rx="3" fill="#adb5bd"/>
+  <rect x="70" y="140" width="56" height="6" rx="3" fill="#adb5bd"/>
+  </g>
+  </g>
+</svg>

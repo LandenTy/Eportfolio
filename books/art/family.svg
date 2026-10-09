@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="50 8 490 376" width="490" height="376">
+
+  <style>
+    #mom, #dad, #boy { transform-box: fill-box; transform-origin: center bottom; }
+    #mom { animation: mom-sway 4.7s ease-in-out infinite; }
+    #dad { animation: dad-sway 5.2s ease-in-out infinite; }
+    #boy { animation: boy-sway 3.8s ease-in-out infinite; }
+    @keyframes mom-sway { 0%,100% { transform: rotate(0deg) translateY(0); } 25% { transform: rotate(-1.1deg) translateY(-1px); } 70% { transform: rotate(1.1deg) translateY(0); } }
+    @keyframes dad-sway { 0%,100% { transform: rotate(0deg) translateY(0); } 32% { transform: rotate(0.9deg) translateY(-1px); } 72% { transform: rotate(-0.8deg) translateY(0); } }
+    @keyframes boy-sway { 0%,100% { transform: rotate(0deg) translateY(0); } 30% { transform: rotate(1.2deg) translateY(-1.4px); } 68% { transform: rotate(-1.2deg) translateY(0); } }
+    .blink-cover {
+      fill: #fcd5ce;
+      opacity: 0;
+      animation: blink-cover 4.2s infinite;
+    }
+    .blink-line {
+      fill: none;
+      stroke: #1e1b18;
+      stroke-width: 3.8;
+      stroke-linecap: round;
+      opacity: 0;
+      animation: blink-line 4.2s infinite;
+    }
+    #mom .blink-cover, #mom .blink-line { animation-delay: -0.7s; }
+    #dad .blink-cover, #dad .blink-line { animation-delay: -2.4s; }
+    #boy .blink-cover, #boy .blink-line { animation-delay: -1.5s; }
+    @keyframes blink-cover {
+      0%, 18%, 23%, 58%, 63%, 100% { opacity: 0; }
+      19%, 22%, 59%, 62% { opacity: 1; }
+    }
+    @keyframes blink-line {
+      0%, 18%, 23%, 58%, 63%, 100% { opacity: 0; }
+      19%, 22%, 59%, 62% { opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #mom, #dad, #boy { animation: none !important; }
+    }
+  </style>
+
+
+  <g id="family-group">
+    <!-- ================= MOM (LEFT) ================= -->
+    <g id="mom">
+      <!-- Legs & Shoes -->
+      <rect x="110" y="300" width="14" height="65" rx="7" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #fcd5ce"/>
+      <rect x="135" y="300" width="14" height="65" rx="7" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #fcd5ce"/>
+      <ellipse cx="110" cy="365" rx="14" ry="8" fill="#d62828" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round"/>
+      <ellipse cx="135" cy="365" rx="14" ry="8" fill="#d62828" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round"/>
+
+      <!-- Dress (A-line/Wider) -->
+      <path d="M 100,180 L 160,180 L 180,305 L 80,305 Z" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #e63946"/>
+
+      <!-- Outer Left Arm -->
+      <path d="M 100,190 Q 75,230 70,270" fill="none" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #fcd5ce" stroke-width="12"/>
+
+      <!-- Inner Right Arm (Holding Boy's Hand) -->
+      <path d="M 155,195 Q 175,240 210,260" fill="none" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #fcd5ce" stroke-width="12"/>
+
+      <!-- Head & Hair -->
+      <circle cx="130" cy="135" r="34" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #fcd5ce"/>
+      <!-- Top Bun -->
+      <circle cx="130" cy="85" r="20" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #4a2c11"/>
+      <path d="M 98,135 C 95,95 165,95 162,135 C 150,110 110,110 98,135 Z" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #4a2c11"/>
+
+      <!-- Glasses & Face -->
+      <circle cx="116" cy="135" r="11" style="fill: none; stroke: #1e1b18; stroke-width: 3.5"/>
+      <circle cx="144" cy="135" r="11" style="fill: none; stroke: #1e1b18; stroke-width: 3.5"/>
+      <line x1="127" y1="135" x2="133" y2="135" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round"/>
+      <circle cx="116" cy="135" r="3" fill="#1e1b18"/>
+      <circle cx="144" cy="135" r="3" fill="#1e1b18"/>
+      <path d="M 120,152 Q 130,162 140,152" fill="none" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round"/>
+      <g aria-label="blinking eyes">
+        <rect class="blink-cover" x="103" y="125" width="54" height="21" rx="10"/>
+        <path class="blink-line" d="M 106,136 Q 116,141 126,136 M 134,136 Q 144,141 154,136"/>
+      </g>
+    </g>
+
+    <!-- ================= DAD (RIGHT / TALL) ================= -->
+    <g id="dad">
+      <!-- Legs & Shoes -->
+      <rect x="445" y="250" width="16" height="120" rx="8" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #3d5a80"/>
+      <rect x="475" y="250" width="16" height="120" rx="8" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #3d5a80"/>
+      <ellipse cx="445" cy="370" rx="16" ry="9" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #212529"/>
+      <ellipse cx="485" cy="370" rx="16" ry="9" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #212529"/>
+
+      <!-- Torso / Shirt -->
+      <path d="M 430,130 L 500,130 L 495,255 L 435,255 Z" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #48cae4"/>
+
+      <!-- Outer Right Arm -->
+      <path d="M 495,140 Q 525,180 530,220" fill="none" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #fcd5ce" stroke-width="13"/>
+
+      <!-- Inner Left Arm (Holding Boy's Hand) -->
+      <path d="M 435,145 Q 410,200 380,260" fill="none" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #fcd5ce" stroke-width="13"/>
+
+      <!-- Head & Spikey Hair -->
+      <circle cx="465" cy="85" r="32" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #fcd5ce"/>
+      <path d="M 435,75 Q 430,50 425,35 Q 442,45 448,50 Q 452,30 460,15 Q 468,32 472,42 Q 482,22 492,15 Q 492,35 488,48 Q 500,38 505,45 Q 495,65 492,80 Z" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #6c4f3d"/>
+
+      <!-- Glasses & Big Smile -->
+      <circle cx="450" cy="85" r="12" style="fill: none; stroke: #1e1b18; stroke-width: 3.5"/>
+      <circle cx="480" cy="85" r="12" style="fill: none; stroke: #1e1b18; stroke-width: 3.5"/>
+      <line x1="462" y1="85" x2="468" y2="85" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round"/>
+      <circle cx="450" cy="85" r="3" fill="#1e1b18"/>
+      <circle cx="480" cy="85" r="3" fill="#1e1b18"/>
+      <path d="M 445,102 Q 465,118 485,102" fill="none" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round" stroke-width="4"/>
+      <g aria-label="blinking eyes">
+        <rect class="blink-cover" x="436" y="74" width="58" height="22" rx="10"/>
+        <path class="blink-line" d="M 440,86 Q 450,91 460,86 M 470,86 Q 480,91 490,86"/>
+      </g>
+    </g>
+
+    <!-- ================= BOY (MIDDLE) ================= -->
+    <g id="boy">
+      <!-- Legs & Shoes -->
+      <rect x="275" y="300" width="12" height="50" rx="6" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #fcd5ce"/>
+      <rect x="300" y="300" width="12" height="50" rx="6" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #fcd5ce"/>
+      <ellipse cx="270" cy="350" rx="12" ry="7" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #212529"/>
+      <ellipse cx="310" cy="350" rx="12" ry="7" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #212529"/>
+
+      <!-- Blue Shorts -->
+      <path d="M 265,260 L 320,260 L 322,305 L 297,305 L 295,285 L 290,285 L 288,305 L 263,305 Z" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #0077b6"/>
+
+      <!-- Green Shirt -->
+      <path d="M 265,200 L 320,200 L 325,265 L 260,265 Z" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #38b000"/>
+
+      <!-- Left Arm (Reaching up to Mom) -->
+      <path d="M 265,210 Q 235,230 210,255" fill="none" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #fcd5ce" stroke-width="10"/>
+
+      <!-- Right Arm (Reaching up to Dad) -->
+      <path d="M 320,210 Q 350,230 380,255" fill="none" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #fcd5ce" stroke-width="10"/>
+
+      <!-- Joined Hand Clasp Nodes -->
+      <circle cx="210" cy="258" r="7" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #fcd5ce"/>
+      <circle cx="380" cy="258" r="7" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #fcd5ce"/>
+
+      <!-- Head & Spikey Hair -->
+      <circle cx="292" cy="160" r="26" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #fcd5ce"/>
+      <path d="M 268,150 Q 262,135 258,125 Q 272,132 275,136 Q 275,120 282,110 Q 289,122 290,130 Q 296,118 304,110 Q 306,122 305,132 Q 315,122 320,128 Q 312,142 312,150 Z" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: #6c4f3d"/>
+
+      <!-- Glasses & Smile -->
+      <circle cx="282" cy="160" r="9" style="fill: none; stroke: #1e1b18; stroke-width: 3.5"/>
+      <circle cx="302" cy="160" r="9" style="fill: none; stroke: #1e1b18; stroke-width: 3.5"/>
+      <line x1="291" y1="160" x2="293" y2="160" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round"/>
+      <circle cx="282" cy="160" r="2.5" fill="#1e1b18"/>
+      <circle cx="302" cy="160" r="2.5" fill="#1e1b18"/>
+      <path d="M 282,174 Q 292,182 302,174" fill="none" style="stroke: #1e1b18; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round"/>
+      <g aria-label="blinking eyes">
+        <rect class="blink-cover" x="272" y="151" width="40" height="18" rx="8"/>
+        <path class="blink-line" d="M 274,161 Q 282,166 290,161 M 294,161 Q 302,166 310,161"/>
+      </g>
+    </g>
+  </g>
+</svg>

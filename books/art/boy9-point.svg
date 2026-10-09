@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="200" height="300">
+  <ellipse cx="76" cy="292" rx="46" ry="7.36" fill="#1e1b18" opacity="0.12"/>
+  <g id="boy" transform="translate(76 290) scale(1 1)">
+  <rect x="-17" y="-57" width="12" height="50" rx="6" fill="#fcd5ce" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="8" y="-57" width="12" height="50" rx="6" fill="#fcd5ce" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="-22" cy="-7" rx="12" ry="7" fill="#212529" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="18" cy="-7" rx="12" ry="7" fill="#212529" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M -27,-97 L 28,-97 L 30,-52 L 5,-52 L 3,-72 L -2,-72 L -4,-52 L -29,-52 Z" fill="#0077b6" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M -27,-157 L 28,-157 L 33,-92 L -32,-92 Z" fill="#38b000" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M -27,-147 Q -42,-122 -46,-96" fill="none" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 28,-149 Q 55,-160 70,-178" fill="none" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="0" cy="-197" r="26" fill="#fcd5ce" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M -24,-207 Q -30,-222 -34,-232 Q -20,-225 -17,-221 Q -17,-237 -10,-247 Q -3,-235 -2,-227 Q 4,-239 12,-247 Q 14,-235 13,-225 Q 23,-235 28,-229 Q 20,-215 20,-207 Z" fill="#6c4f3d" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="-10" cy="-197" r="9" fill="none" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="10" cy="-197" r="9" fill="none" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="-1" y1="-197" x2="1" y2="-197" fill="none" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="-10" cy="-197" r="2.5" fill="#1e1b18"/>
+  <circle cx="10" cy="-197" r="2.5" fill="#1e1b18"/>
+  <path d="M -10,-183 Q 0,-175 10,-183" fill="none" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="-46" cy="-93" r="6.5" fill="#fcd5ce" stroke="#1e1b18" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="72" cy="-180" r="6.5" fill="#fcd5ce" stroke="#1e1b18" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

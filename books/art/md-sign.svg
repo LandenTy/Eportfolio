@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 200" width="250" height="200">
+  <g id="road-sign">
+  <rect x="52" y="114" width="14" height="84" rx="3" fill="#adb5bd" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="184" y="114" width="14" height="84" rx="3" fill="#adb5bd" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="14" y="22" width="222" height="100" rx="12" fill="#2b9348" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="24" y="32" width="202" height="80" rx="8" fill="none" stroke="#f8f9fa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="125" y="60" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="18" fill="#f8f9fa" text-anchor="middle" xml:space="preserve">welcome to</text>
+  <text x="125" y="96" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="30" fill="#f8f9fa" text-anchor="middle" font-weight="bold" xml:space="preserve">MARYLAND</text>
+  </g>
+</svg>

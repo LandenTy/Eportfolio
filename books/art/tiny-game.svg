@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 200" width="230" height="200">
+  <g id="tiny-game">
+  <rect x="10" y="34" width="210" height="160" rx="12" fill="#3d5a80" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="snake-screen" x="26" y="50" width="178" height="128" rx="4" fill="#1b263b" stroke="#1e1b18" stroke-width="3"/>
+  <g class="snake-demo">
+  <g transform="translate(0 -24)">
+  <rect x="60" y="150" width="16" height="16" rx="3" fill="#38b000" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="78" y="150" width="16" height="16" rx="3" fill="#38b000" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="96" y="150" width="16" height="16" rx="3" fill="#38b000" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="96" y="132" width="16" height="16" rx="3" fill="#38b000" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="96" y="114" width="16" height="16" rx="3" fill="#38b000" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="114" y="114" width="16" height="16" rx="3" fill="#70e000" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="164" cy="92" r="9" fill="#e63946" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="164" y1="82" x2="168" y2="76" fill="none" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="115" y="172" font-family="'Courier New', Courier, monospace" font-size="13" fill="#f8f9fa" text-anchor="middle" font-weight="bold" opacity="0.8" xml:space="preserve">click to play</text>
+  </g>
+  <g class="snake-live"></g>
+  <text class="snake-score" x="40" y="72" font-family="'Courier New', Courier, monospace" font-size="14" fill="#f8f9fa" font-weight="bold" xml:space="preserve">SCORE 6</text>
+  </g>
+</svg>

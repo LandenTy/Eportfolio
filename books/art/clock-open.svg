@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 200" width="250" height="200">
+  <g id="clock">
+  <circle cx="100" cy="112" r="78" fill="#e63946" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="100" cy="112" r="62" fill="#f8f9fa" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="gear" class="anim-gear">
+  <path d="M105.7,93.9 L113.9,95 L113.9,101 L105.7,102.1 L103.5,108.6 L109.5,114.3 L106,119.2 L98.8,115.2 L93.2,119.2 L94.7,127.4 L89,129.2 L85.5,121.7 L78.5,121.7 L75,129.2 L69.3,127.4 L70.8,119.2 L65.2,115.2 L58,119.2 L54.5,114.3 L60.5,108.6 L58.3,102.1 L50.1,101 L50.1,95 L58.3,93.9 L60.5,87.4 L54.5,81.7 L58,76.8 L65.2,80.8 L70.8,76.8 L69.3,68.6 L75,66.8 L78.5,74.3 L85.5,74.3 L89,66.8 L94.7,68.6 L93.2,76.8 L98.8,80.8 L106,76.8 L109.5,81.7 L103.5,87.4 Z" fill="#ffbe0b" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="82" cy="98" r="7.68" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g>
+  <path d="M143.6,132.6 L149.8,133.4 L149.8,138.6 L143.6,139.4 L141.4,144.7 L145.3,149.6 L141.6,153.3 L136.7,149.4 L131.4,151.6 L130.6,157.8 L125.4,157.8 L124.6,151.6 L119.3,149.4 L114.4,153.3 L110.7,149.6 L114.6,144.7 L112.4,139.4 L106.2,138.6 L106.2,133.4 L112.4,132.6 L114.6,127.3 L110.7,122.4 L114.4,118.7 L119.3,122.6 L124.6,120.4 L125.4,114.2 L130.6,114.2 L131.4,120.4 L136.7,122.6 L141.6,118.7 L145.3,122.4 L141.4,127.3 Z" fill="#adb5bd" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="128" cy="136" r="5.12" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M 52,150 q 8,-10 16,0 q 8,10 16,0 q 8,-10 16,0" fill="none" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="back-cover">
+  <ellipse cx="208" cy="132" rx="24" ry="60" fill="#e63946" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="208" cy="132" rx="12" ry="40" fill="#d62828" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <circle cx="176" cy="190" r="4" fill="#1e1b18"/>
+  <circle cx="190" cy="190" r="4" fill="#1e1b18"/>
+</svg>

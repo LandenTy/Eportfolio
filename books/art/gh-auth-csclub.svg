@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 608 368" width="608" height="368">
+  <g id="authlite">
+  <rect x="12" y="40" width="280" height="290" rx="12" fill="#f8f9fa" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 12,80 L 12,52 Q 12,40 24,40 L 280,40 Q 292,40 292,52 L 292,80 Z" fill="#3d5a80" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="30" y="67" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="18" fill="#f8f9fa" text-anchor="start" font-weight="bold" xml:space="preserve">AuthLite</text>
+  <circle cx="270" cy="60" r="6" fill="#38b000" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="250" cy="60" r="6" fill="#ffbe0b" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="230" cy="60" r="6" fill="#e63946" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="26" y="96" width="252" height="54" rx="8" fill="#dee2e6" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="40" y="116" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="13" fill="#495057" text-anchor="start" font-weight="bold" xml:space="preserve">email</text>
+  <text x="40" y="140" font-family="'Courier New', Courier, monospace" font-size="24" fill="#3d5a80" text-anchor="start" font-weight="bold" xml:space="preserve">482 913</text>
+  <circle cx="250" cy="123" r="13" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 250,123 L 250,110 A 13,13 0 1 1 237.6,127.0 Z" fill="#38b000" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="26" y="160" width="252" height="54" rx="8" fill="#dee2e6" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="40" y="180" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="13" fill="#495057" text-anchor="start" font-weight="bold" xml:space="preserve">server</text>
+  <text x="40" y="204" font-family="'Courier New', Courier, monospace" font-size="24" fill="#3d5a80" text-anchor="start" font-weight="bold" xml:space="preserve">051 774</text>
+  <circle cx="250" cy="187" r="13" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 250,187 L 250,174 A 13,13 0 0 1 254.0,199.4 Z" fill="#ffbe0b" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="26" y="224" width="252" height="54" rx="8" fill="#dee2e6" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="40" y="244" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="13" fill="#495057" text-anchor="start" font-weight="bold" xml:space="preserve">school</text>
+  <text x="40" y="268" font-family="'Courier New', Courier, monospace" font-size="24" fill="#3d5a80" text-anchor="start" font-weight="bold" xml:space="preserve">930 268</text>
+  <circle cx="250" cy="251" r="13" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 250,251 L 250,238 A 13,13 0 0 1 262.4,247.0 Z" fill="#e63946" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="lock">
+  <path d="M 34,306 L 34,298 Q 34,288 43,288 Q 52,288 52,298 L 52,306" fill="none" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="28" y="304" width="30" height="22" rx="4" fill="#ffbe0b" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="68" y="321" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="13" fill="#495057" text-anchor="start" xml:space="preserve">offline · encrypted backups</text>
+  </g>
+  <g id="cs-portal">
+  <rect x="318" y="40" width="280" height="290" rx="12" fill="#f8f9fa" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 318,80 L 318,52 Q 318,40 330,40 L 586,40 Q 598,40 598,52 L 598,80 Z" fill="#e63946" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="336" y="67" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="18" fill="#f8f9fa" text-anchor="start" font-weight="bold" xml:space="preserve">Steele CS Club</text>
+  <circle cx="576" cy="60" r="6" fill="#38b000" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="556" cy="60" r="6" fill="#ffbe0b" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="536" cy="60" r="6" fill="#e63946" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="330" y="92" width="76" height="226" rx="6" fill="#dee2e6" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="340" y="116" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="11" fill="#1e1b18" text-anchor="start" font-weight="bold" xml:space="preserve">Dashboard</text>
+  <text x="340" y="146" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="11" fill="#1e1b18" text-anchor="start" font-weight="bold" xml:space="preserve">Lessons</text>
+  <rect x="334" y="161" width="68" height="22" rx="4" fill="#f8f9fa" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="340" y="176" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="11" fill="#1e1b18" text-anchor="start" font-weight="bold" xml:space="preserve">Editor</text>
+  <text x="340" y="206" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="11" fill="#1e1b18" text-anchor="start" font-weight="bold" xml:space="preserve">Projects</text>
+  <g id="editor">
+  <rect x="414" y="92" width="172" height="150" rx="6" fill="#212529" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="424" y="116" font-family="'Courier New', Courier, monospace" font-size="14" fill="#80ed99" text-anchor="start" font-weight="bold" xml:space="preserve">&lt;h1&gt;Hi!&lt;/h1&gt;</text>
+  <text x="424" y="136" font-family="'Courier New', Courier, monospace" font-size="14" fill="#80ed99" text-anchor="start" font-weight="bold" xml:space="preserve">&lt;p&gt;my first</text>
+  <text x="424" y="156" font-family="'Courier New', Courier, monospace" font-size="14" fill="#80ed99" text-anchor="start" font-weight="bold" xml:space="preserve">   page&lt;/p&gt;</text>
+  <rect x="424" y="172" width="9" height="14" fill="#80ed99"/>
+  </g>
+  <rect x="414" y="252" width="172" height="66" rx="6" fill="#fff3d6" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="426" y="278" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="16" fill="#1e1b18" text-anchor="start" font-weight="bold" xml:space="preserve">Lesson 3</text>
+  <text x="426" y="302" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="13" fill="#495057" text-anchor="start" xml:space="preserve">HTML basics</text>
+  <rect x="522" y="270" width="54" height="26" rx="8" fill="#38b000" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="549" y="288" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="12" fill="#f8f9fa" text-anchor="middle" font-weight="bold" xml:space="preserve">Run ▶</text>
+  </g>
+</svg>

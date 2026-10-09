@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 196" width="120" height="196">
+  <g transform="translate(0 16)">
+  <g id="pens">
+  <g transform="rotate(-14 40 80)">
+  <rect x="30" y="6" width="14" height="84" rx="4" fill="#e63946" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="30" y="6" width="14" height="18" rx="4" fill="#d62828" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(9 70 80)">
+  <rect x="62" y="0" width="14" height="90" rx="2" fill="#ffbe0b" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M62,0 L76,0 L69,-14 Z" fill="#ddb892" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M66.5,-8 L71.5,-8 L69,-14 Z" fill="#1e1b18"/>
+  <rect x="62" y="82" width="14" height="8" fill="#adb5bd" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(3 55 80)">
+  <rect x="48" y="14" width="12" height="76" rx="4" fill="#0077b6" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="48" y="14" width="12" height="14" rx="4" fill="#3d5a80" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(22 90 80)">
+  <rect x="84" y="22" width="12" height="70" rx="4" fill="#212529" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="84" y="22" width="12" height="12" rx="4" fill="#495057" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  </g>
+  <g id="cup">
+  <path d="M 8,76 L 8,160 Q 8,172 20,172 L 100,172 Q 112,172 112,160 L 112,76 Z" fill="#48cae4" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="60" cy="76" rx="52" ry="10" fill="#90e0ef" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="8" y1="120" x2="112" y2="120" fill="none" stroke="#3d5a80" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+  <text x="60" y="152" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="20" fill="#3d5a80" text-anchor="middle" font-weight="bold" xml:space="preserve">&lt;/&gt;</text>
+  </g>
+  </g>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" width="560" height="400">
+  <defs><clipPath id="tv-ps3-c1"><rect x="84" y="54" width="392" height="214" rx="6"/></clipPath></defs>
+  <rect x="90" y="300" width="380" height="74" rx="10" fill="#c08552" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="90" y1="334" x2="470" y2="334" fill="none" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="112" y="372" width="16" height="22" rx="3" fill="#4a2c11" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="432" y="372" width="16" height="22" rx="3" fill="#4a2c11" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="console">
+  <rect x="200" y="342" width="160" height="26" rx="8" fill="#212529" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="222" y1="355" x2="300" y2="355" fill="none" stroke="#adb5bd" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="336" cy="355" r="4" fill="#38b000"/>
+  </g>
+  <rect x="258" y="284" width="44" height="18" rx="3" fill="#212529" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="64" y="34" width="432" height="254" rx="16" fill="#212529" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="screen" class="anim-flicker">
+  <g clip-path="url(#tv-ps3-c1)">
+  <rect x="84" y="54" width="392" height="214" fill="#a2d2ff"/>
+  <circle cx="430" cy="92" r="20" fill="#ffbe0b" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="150" cy="92" rx="26" ry="13" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="172" cy="85" rx="20" ry="14" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="192" cy="92" rx="17" ry="11" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="300" cy="110" rx="26" ry="13" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="322" cy="103" rx="20" ry="14" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="342" cy="110" rx="17" ry="11" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 84,226 Q 150,160 230,206 Q 300,240 370,190 Q 420,160 476,200 L 476,270 L 84,270 Z" fill="#38b000" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="220" y="160" width="30" height="26" fill="#bc6c25" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="250" y="160" width="30" height="26" fill="#bc6c25" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="280" y="160" width="30" height="26" fill="#bc6c25" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="250" cy="138" r="8" fill="#ffbe0b" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="276" cy="138" r="8" fill="#ffbe0b" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="84" y="240" width="30.2" height="30" fill="#bc6c25" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="114.2" y="240" width="30.2" height="30" fill="#bc6c25" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="144.4" y="240" width="30.2" height="30" fill="#bc6c25" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="174.6" y="240" width="30.2" height="30" fill="#bc6c25" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="204.8" y="240" width="30.2" height="30" fill="#bc6c25" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="235" y="240" width="30.2" height="30" fill="#bc6c25" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="265.2" y="240" width="30.2" height="30" fill="#bc6c25" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="295.4" y="240" width="30.2" height="30" fill="#bc6c25" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="325.6" y="240" width="30.2" height="30" fill="#bc6c25" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="355.8" y="240" width="30.2" height="30" fill="#bc6c25" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="386" y="240" width="30.2" height="30" fill="#bc6c25" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="416.2" y="240" width="30.2" height="30" fill="#bc6c25" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="446.4" y="240" width="30.2" height="30" fill="#bc6c25" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g class="pull-jump">
+  <rect x="149.2" y="204" width="21.6" height="26.4" rx="3.6" fill="#e63946" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="160" cy="194.4" r="10.8" fill="#fcd5ce" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="150.4" y="229.2" width="7.2" height="10.8" fill="#0077b6" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="162.4" y="229.2" width="7.2" height="10.8" fill="#0077b6" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <line x1="430" y1="160" x2="430" y2="240" fill="none" stroke="#1e1b18" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M432,162 L460,172 L432,184 Z" fill="#e63946" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  </g>
+  <rect x="84" y="54" width="392" height="214" rx="6" fill="none" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" width="420" height="420">
+  <ellipse cx="290" cy="410" rx="70" ry="11.2" fill="#1e1b18" opacity="0.12"/>
+  <ellipse cx="112" cy="410" rx="50" ry="8" fill="#1e1b18" opacity="0.12"/>
+  <g id="dad" transform="translate(290 408) scale(1)">
+  <rect x="-20" y="-129" width="16" height="120" rx="8" fill="#3d5a80" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="10" y="-129" width="16" height="120" rx="8" fill="#3d5a80" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="-20" cy="-9" rx="16" ry="9" fill="#212529" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="20" cy="-9" rx="16" ry="9" fill="#212529" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M -35,-249 L 35,-249 L 30,-124 L -30,-124 Z" fill="#48cae4" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M -33,-239 Q -58,-215 -52,-190" fill="none" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 33,-239 Q 58,-215 52,-190" fill="none" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="ps3-box" class="anim-settle">
+  <rect x="-50" y="-232" width="100" height="72" rx="4" fill="#212529" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="-50" y="-232" width="100" height="14" rx="4" fill="#495057" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="0" y="-183" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="26" fill="#f8f9fa" text-anchor="middle" font-weight="bold" xml:space="preserve">PS3</text>
+  </g>
+  <circle cx="0" cy="-294" r="32" fill="#fcd5ce" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M -30,-304 Q -35,-329 -40,-344 Q -23,-334 -17,-329 Q -13,-349 -5,-364 Q 3,-347 7,-337 Q 17,-357 27,-364 Q 27,-344 23,-331 Q 35,-341 40,-334 Q 30,-314 27,-299 Z" fill="#6c4f3d" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="-15" cy="-294" r="12" fill="none" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="15" cy="-294" r="12" fill="none" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="-3" y1="-294" x2="3" y2="-294" fill="none" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="-15" cy="-294" r="3" fill="#1e1b18"/>
+  <circle cx="15" cy="-294" r="3" fill="#1e1b18"/>
+  <path d="M -20,-277 Q 0,-261 20,-277" fill="none" stroke="#1e1b18" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="-52" cy="-188" r="7" fill="#fcd5ce" stroke="#1e1b18" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="52" cy="-188" r="7" fill="#fcd5ce" stroke="#1e1b18" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g class="pull-hop"><g id="boy" transform="translate(112 408) scale(1 1)">
+  <rect x="-17" y="-57" width="12" height="50" rx="6" fill="#fcd5ce" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="8" y="-57" width="12" height="50" rx="6" fill="#fcd5ce" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="-22" cy="-7" rx="12" ry="7" fill="#212529" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="18" cy="-7" rx="12" ry="7" fill="#212529" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M -27,-97 L 28,-97 L 30,-52 L 5,-52 L 3,-72 L -2,-72 L -4,-52 L -29,-52 Z" fill="#0077b6" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M -27,-157 L 28,-157 L 33,-92 L -32,-92 Z" fill="#38b000" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M -27,-150 Q -46,-172 -52,-200" fill="none" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 28,-150 Q 47,-172 53,-200" fill="none" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="0" cy="-197" r="26" fill="#fcd5ce" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M -24,-207 Q -30,-222 -34,-232 Q -20,-225 -17,-221 Q -17,-237 -10,-247 Q -3,-235 -2,-227 Q 4,-239 12,-247 Q 14,-235 13,-225 Q 23,-235 28,-229 Q 20,-215 20,-207 Z" fill="#6c4f3d" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="-10" cy="-197" r="9" fill="none" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="10" cy="-197" r="9" fill="none" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="-1" y1="-197" x2="1" y2="-197" fill="none" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="-10" cy="-197" r="2.5" fill="#1e1b18"/>
+  <circle cx="10" cy="-197" r="2.5" fill="#1e1b18"/>
+  <path d="M -10,-183 Q 0,-175 10,-183" fill="none" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="-52" cy="-203" r="6.5" fill="#fcd5ce" stroke="#1e1b18" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="53" cy="-203" r="6.5" fill="#fcd5ce" stroke="#1e1b18" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g></g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <g id="tree">
+  <ellipse cx="100" cy="192" rx="62" ry="7" fill="#38b000" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="89" y="128" width="22" height="66" rx="3" fill="#9c4a2f" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="96" y1="140" x2="96" y2="186" fill="none" stroke="#6b2f1d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="104" y1="134" x2="104" y2="180" fill="none" stroke="#6b2f1d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M100,6 L132,60 L68,60 Z" fill="#2b9348" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M100,34 L144,100 L56,100 Z" fill="#38b000" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M100,68 L156,140 L44,140 Z" fill="#2b9348" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

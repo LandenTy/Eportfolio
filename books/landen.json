@@ -1,0 +1,958 @@
+{
+  "cover": {
+    "title": "NOTEBOOK",
+    "subtitle": "Landen Barker",
+    "mark": "λ"
+  },
+  "spreads": [
+    {
+      "id": "preface",
+      "label": "Preface",
+      "left": {
+        "title": {
+          "text": "PREFACE",
+          "sub": "The notebook of Landen Barker"
+        },
+        "num": "i"
+      },
+      "right": {
+        "heading": "I was a young boy.",
+        "text": [
+          "This is my family: my mom, my dad, and me."
+        ],
+        "hand": "me, in the middle",
+        "num": "ii"
+      },
+      "folds": [
+        {
+          "y": 460,
+          "wl": 153,
+          "wr": 153,
+          "h": 235,
+          "phi": 18,
+          "art": "art/family.svg"
+        }
+      ]
+    },
+    {
+      "label": "Preface · The PS3",
+      "left": {
+        "heading": "Then my dad brought home a PS3.",
+        "text": [
+          "I loved it."
+        ],
+        "num": "iii"
+      },
+      "right": {
+        "text": [
+          "I didn't only want to play games.",
+          "I wanted to make my own."
+        ],
+        "hand": "my own games",
+        "num": "iv",
+        "html": "<div class=\"pull-tab\" data-pull style=\"top:300px\">pull →</div>"
+      },
+      "folds": [
+        {
+          "y": 240,
+          "wl": 165,
+          "wr": 165,
+          "h": 236,
+          "phi": 12,
+          "art": "art/tv-ps3.svg"
+        },
+        {
+          "y": 495,
+          "wl": 118,
+          "wr": 118,
+          "h": 236,
+          "phi": 22,
+          "art": "art/dad-boy-ps3.svg"
+        },
+        {
+          "y": 616,
+          "wl": 160,
+          "wr": 170,
+          "h": 143,
+          "phi": 38,
+          "wing": {
+            "left": "art/controller.svg",
+            "right": "art/thought-game.svg"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Preface · Home",
+      "left": {
+        "heading": "A different kind of school",
+        "text": [
+          "I got pulled out of school and started homeschooling."
+        ],
+        "num": "v"
+      },
+      "right": {
+        "text": [
+          "We moved to Maryland."
+        ],
+        "hand": "→ Maryland",
+        "num": "vi"
+      },
+      "folds": [
+        {
+          "y": 300,
+          "wl": 144,
+          "wr": 144,
+          "h": 231,
+          "phi": 14,
+          "art": "art/house.svg"
+        },
+        {
+          "y": 480,
+          "wl": 50,
+          "wr": 50,
+          "h": 188,
+          "phi": 24,
+          "art": "art/boy-backpack.svg"
+        },
+        {
+          "y": 615,
+          "wl": 150,
+          "wr": 165,
+          "h": 143,
+          "phi": 36,
+          "wing": {
+            "left": "art/boxes.svg",
+            "right": "art/md-sign.svg"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Preface · Age 9",
+      "left": {
+        "label": "Age 9",
+        "heading": "C",
+        "text": [
+          "At nine, I started learning C.",
+          "What I made was small: little games, and text programs that printed something and waited for you to type back."
+        ],
+        "num": "vii"
+      },
+      "right": {
+        "text": [
+          "The code wasn't the part that stuck.",
+          "It was finding out a computer could be understood, and told what to do, by someone writing it themselves."
+        ],
+        "hand": "the top of the rabbit hole",
+        "num": "viii"
+      },
+      "folds": [
+        {
+          "y": 300,
+          "wl": 163,
+          "wr": 163,
+          "h": 244,
+          "phi": 14,
+          "art": "art/computer-c.svg"
+        },
+        {
+          "y": 490,
+          "wl": 63,
+          "wr": 63,
+          "h": 188,
+          "phi": 22,
+          "art": "art/boy9-point.svg"
+        },
+        {
+          "y": 615,
+          "wl": 165,
+          "wr": 152,
+          "h": 143,
+          "phi": 36,
+          "wing": {
+            "left": "art/text-program.svg",
+            "right": "art/tiny-game.svg"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Preface · Age 13",
+      "left": {
+        "label": "Age 13",
+        "heading": "Underneath",
+        "text": [
+          "C let me tell the computer what I wanted.",
+          "At thirteen I started learning assembly, because I wanted to know what it was actually doing with what I told it."
+        ],
+        "num": "ix"
+      },
+      "right": {
+        "text": [
+          "Registers. Memory. One instruction at a time.",
+          "Same computer. I'd just opened it up."
+        ],
+        "hand": "mov ax, 1   ; hello",
+        "num": "x",
+        "html": "<div class=\"pull-tab\" data-pull style=\"top:300px\">pull →</div>"
+      },
+      "folds": [
+        {
+          "y": 300,
+          "wl": 150,
+          "wr": 150,
+          "h": 244,
+          "phi": 14,
+          "art": "art/tower-open.svg"
+        },
+        {
+          "y": 480,
+          "wl": 75,
+          "wr": 75,
+          "h": 200,
+          "phi": 22,
+          "art": "art/boy13-magnify.svg"
+        },
+        {
+          "y": 615,
+          "wl": 165,
+          "wr": 165,
+          "h": 143,
+          "phi": 36,
+          "wing": {
+            "left": "art/cpu-chip.svg",
+            "right": "art/asm-paper.svg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contents",
+      "label": "Contents",
+      "left": {
+        "title": {
+          "text": "CONTENTS"
+        },
+        "notes": [
+          {
+            "text": "pick a page →",
+            "left": 70,
+            "bottom": 120,
+            "rotate": -4
+          }
+        ],
+        "num": "xi"
+      },
+      "right": {
+        "html": "<nav class=\"toc\"><p class=\"toc-sub\">Contents</p><a href=\"#about\" data-goto=\"about\"><span>About</span><i></i><b>1</b></a><a href=\"#projects\" data-goto=\"projects\"><span>Projects</span><i></i><b>7</b></a><a href=\"#experience\" data-goto=\"experience\"><span>Experience</span><i></i><b>21</b></a><a href=\"#contact\" data-goto=\"contact\"><span>Contact</span><i></i><b>29</b></a></nav>",
+        "num": "xii"
+      },
+      "folds": [
+        {
+          "y": 420,
+          "wl": 150,
+          "wr": 150,
+          "h": 294,
+          "phi": 16,
+          "art": "art/signpost.svg"
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "label": "About",
+      "left": {
+        "notes": [
+          {
+            "text": "chapter one →",
+            "right": 70,
+            "bottom": 150,
+            "rotate": -4
+          },
+          {
+            "text": "↩ contents",
+            "left": 80,
+            "bottom": 18,
+            "rotate": -3,
+            "goto": "contents"
+          }
+        ],
+        "num": "1"
+      },
+      "right": {
+        "title": {
+          "text": "ABOUT",
+          "sub": "Chapter One"
+        },
+        "text": [
+          "Who I am, and the habit behind everything else in this book.",
+          "If I don't understand something, I take it apart until I do."
+        ],
+        "num": "2"
+      },
+      "folds": []
+    },
+    {
+      "label": "About · Why I build",
+      "left": {
+        "label": "About",
+        "heading": "There wasn't much extra.",
+        "text": [
+          "My family was poorer than poor. That isn't the sad part of this story. It's the useful part.",
+          "It taught me to ask a different kind of question."
+        ],
+        "num": "3"
+      },
+      "right": {
+        "html": "<div class=\"questions\"><p>If I can't afford it,<br>can I make it?</p><p>If it doesn't exist,<br>can I build it?</p><p>If I don't understand it,<br>can I take it apart?</p></div>",
+        "num": "4"
+      },
+      "folds": [
+        {
+          "y": 330,
+          "wl": 169,
+          "wr": 169,
+          "h": 188,
+          "phi": 14,
+          "art": "art/pegboard.svg"
+        },
+        {
+          "y": 540,
+          "wl": 165,
+          "wr": 165,
+          "h": 143,
+          "phi": 34,
+          "wing": {
+            "left": "art/cardboard.svg",
+            "right": "art/clock-open.svg"
+          }
+        }
+      ]
+    },
+    {
+      "label": "About · Same instinct",
+      "left": {
+        "label": "About",
+        "heading": "Same instinct",
+        "text": [
+          "The tools kept changing: C, then assembly, then games, then an engine, then Lambda.",
+          "What I was doing with them never did."
+        ],
+        "num": "5"
+      },
+      "right": {
+        "html": "<div class=\"questions\"><p>If something was too expensive, I looked for a cheaper way.</p><p>If something didn't exist, I built it.</p><p>If I didn't understand something, I learned how it worked.</p><p class=\"coda\">That's the story.</p></div>",
+        "num": "6"
+      },
+      "folds": [
+        {
+          "y": 400,
+          "wl": 94,
+          "wr": 94,
+          "h": 194,
+          "phi": 18,
+          "art": "art/sign-build.svg"
+        },
+        {
+          "y": 580,
+          "wl": 165,
+          "wr": 165,
+          "h": 143,
+          "phi": 36,
+          "wing": {
+            "left": "art/sign-cheaper.svg",
+            "right": "art/sign-learn.svg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "projects",
+      "label": "Projects",
+      "left": {
+        "notes": [
+          {
+            "text": "chapter two →",
+            "right": 70,
+            "bottom": 150,
+            "rotate": -4
+          },
+          {
+            "text": "↩ contents",
+            "left": 80,
+            "bottom": 18,
+            "rotate": -3,
+            "goto": "contents"
+          }
+        ],
+        "num": "7"
+      },
+      "right": {
+        "title": {
+          "text": "PROJECTS",
+          "sub": "Chapter Two"
+        },
+        "text": [
+          "Things I've built.",
+          "The first few are on GitHub, READMEs and all, so you can go look underneath them yourself."
+        ],
+        "num": "8"
+      },
+      "folds": []
+    },
+    {
+      "label": "Projects · On GitHub",
+      "left": {
+        "label": "Projects",
+        "kicker": "C · DJGPP · MS-DOS",
+        "heading": "DOS-Assembler",
+        "text": [
+          "A 16-bit assembler for MS-DOS. It turns x86 assembly into .COM programs as raw machine code, with no external tools.",
+          "<a href=\"https://github.com/LandenTy/DOS-Assembler\">Read the README ↗</a>"
+        ],
+        "num": "9"
+      },
+      "right": {
+        "kicker": "Python · PyGame",
+        "heading": "Sequoia Browser Engine",
+        "text": [
+          "A small HTML browser engine, built for viewing sites in TechSmart. It draws headings, tables, links, form inputs and SVG images itself.",
+          "<a href=\"https://github.com/LandenTy/SequoiaBrowserEngine\">Read the README ↗</a>"
+        ],
+        "num": "10"
+      },
+      "folds": [
+        {
+          "y": 300,
+          "wl": 190,
+          "wr": 190,
+          "h": 230,
+          "phi": 14,
+          "art": "art/gh-asm-sequoia.svg"
+        },
+        {
+          "y": 560,
+          "wl": 140,
+          "wr": 140,
+          "h": 143,
+          "phi": 34,
+          "wing": {
+            "left": "art/floppy-com.svg",
+            "right": "art/sequoia-tree.svg"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Projects · On GitHub",
+      "left": {
+        "label": "Projects",
+        "kicker": "HTML · CSS · JavaScript",
+        "heading": "AuthLite",
+        "text": [
+          "An offline TOTP authenticator that runs entirely in the browser. Secrets never leave it, and backups are encrypted with AES-GCM and PBKDF2.",
+          "<a href=\"https://github.com/LandenTy/AuthLite\">Read the README ↗</a>"
+        ],
+        "num": "11"
+      },
+      "right": {
+        "kicker": "PHP · JavaScript",
+        "heading": "CS-Frontend",
+        "text": [
+          "The application portal used by students of the Steele Computer Science Club.",
+          "<a href=\"https://github.com/LandenTy/CS-Frontend\">Read the README ↗</a>"
+        ],
+        "html": "<a class=\"hand note\" href=\"https://github.com/LandenTy\" style=\"right:56px;top:36px;transform:rotate(-3deg)\">more on my GitHub ↗</a>",
+        "num": "12"
+      },
+      "folds": [
+        {
+          "y": 300,
+          "wl": 190,
+          "wr": 190,
+          "h": 230,
+          "phi": 14,
+          "art": "art/gh-auth-csclub.svg"
+        },
+        {
+          "y": 560,
+          "wl": 140,
+          "wr": 150,
+          "h": 143,
+          "phi": 34,
+          "wing": {
+            "left": "art/padlock.svg",
+            "right": "art/lessons.svg"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Projects · Age 16",
+      "left": {
+        "label": "Projects",
+        "heading": "The machine that makes games",
+        "text": [
+          "At sixteen I started my first major project: a game engine, with its own editor.",
+          "I'd stopped making only games. Now I was making the thing games are made with."
+        ],
+        "num": "13"
+      },
+      "right": {
+        "text": [
+          "It became my biggest passion project, and the thing I most wanted to get right."
+        ],
+        "hand": "this is where it got big",
+        "num": "14",
+        "html": "<div class=\"pull-tab\" data-pull style=\"top:300px\">pull →</div>"
+      },
+      "folds": [
+        {
+          "y": 260,
+          "wl": 256,
+          "wr": 256,
+          "h": 275,
+          "phi": 12,
+          "art": "art/engine-editor.svg"
+        },
+        {
+          "y": 440,
+          "wl": 175,
+          "wr": 175,
+          "h": 250,
+          "phi": 20,
+          "art": "art/engine-machine.svg"
+        },
+        {
+          "y": 610,
+          "wl": 135,
+          "wr": 135,
+          "h": 143,
+          "phi": 36,
+          "wing": {
+            "left": "art/pieces-a.svg",
+            "right": "art/pieces-b.svg"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Projects · It kept going",
+      "left": {
+        "label": "Projects",
+        "heading": "It kept going",
+        "text": [
+          "After I showed it at my high school EXPO, I kept building it.",
+          "Over time it stopped being that first engine and turned into something else."
+        ],
+        "num": "15"
+      },
+      "right": {
+        "notes": [
+          {
+            "text": "it kept changing shape",
+            "right": 80,
+            "bottom": 150,
+            "rotate": -4
+          }
+        ],
+        "num": "16"
+      },
+      "folds": [
+        {
+          "y": 310,
+          "wl": 169,
+          "wr": 169,
+          "h": 212,
+          "phi": 14,
+          "art": "art/old-editor.svg"
+        },
+        {
+          "y": 460,
+          "wl": 138,
+          "wr": 138,
+          "h": 188,
+          "phi": 20,
+          "art": "art/new-editor.svg"
+        },
+        {
+          "y": 612,
+          "wl": 135,
+          "wr": 135,
+          "h": 143,
+          "phi": 34,
+          "wing": {
+            "left": "art/floppy.svg",
+            "right": "art/lambda-sketch.svg"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Projects · Lambda",
+      "left": {
+        "label": "Projects",
+        "heading": "Lambda",
+        "text": [
+          "That engine is now the Lambda editor.",
+          "Everything before it is in there somewhere: the C, the assembly, the games, the first engine."
+        ],
+        "num": "17"
+      },
+      "right": {
+        "kicker": "C++ · OpenGL · PC, with a PS2 port",
+        "text": [
+          "It's me building the tools I wish existed, and still asking the same question."
+        ],
+        "hand": "how does this work?",
+        "num": "18"
+      },
+      "folds": [
+        {
+          "y": 240,
+          "wl": 275,
+          "wr": 275,
+          "h": 294,
+          "phi": 10,
+          "art": "art/lambda-editor.svg"
+        },
+        {
+          "y": 420,
+          "wl": 94,
+          "wr": 94,
+          "h": 250,
+          "phi": 22,
+          "art": "art/lambda.svg"
+        },
+        {
+          "y": 600,
+          "wl": 165,
+          "wr": 165,
+          "h": 143,
+          "phi": 38,
+          "wing": {
+            "left": "art/cpu-chip.svg",
+            "right": "art/gears.svg"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Projects · Also",
+      "left": {
+        "label": "Projects",
+        "heading": "Other things I've taken apart",
+        "text": [
+          "<b>Jam N' Jelly</b>: a Jellyfin client for the PS2, with its own video codec (LVID) and a Python proxy."
+        ],
+        "num": "19"
+      },
+      "right": {
+        "text": [
+          "<b>Game Boy emulator</b>: C/C++, in progress.",
+          "<b>Terminal graphics</b>: a 3D ASCII rasterizer and a raycaster, in Windows Terminal."
+        ],
+        "num": "20"
+      },
+      "folds": [
+        {
+          "y": 370,
+          "wl": 119,
+          "wr": 119,
+          "h": 188,
+          "phi": 18,
+          "art": "art/tv.svg"
+        },
+        {
+          "y": 570,
+          "wl": 135,
+          "wr": 165,
+          "h": 143,
+          "phi": 34,
+          "wing": {
+            "left": "art/handheld.svg",
+            "right": "art/terminal.svg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "experience",
+      "label": "Experience",
+      "left": {
+        "notes": [
+          {
+            "text": "chapter three →",
+            "right": 70,
+            "bottom": 150,
+            "rotate": -4
+          },
+          {
+            "text": "↩ contents",
+            "left": 80,
+            "bottom": 18,
+            "rotate": -3,
+            "goto": "contents"
+          }
+        ],
+        "num": "21"
+      },
+      "right": {
+        "title": {
+          "text": "EXPERIENCE",
+          "sub": "Chapter Three"
+        },
+        "text": [
+          "Where my work met other people: a first job at twelve, a quiet stretch of learning, and an engine on a table at my high school EXPO."
+        ],
+        "num": "22"
+      },
+      "folds": []
+    },
+    {
+      "label": "Experience · Age 12",
+      "left": {
+        "label": "Experience",
+        "heading": "Making it a job",
+        "text": [
+          "At twelve, with my parents' help, I started a freelancing business on Fiverr, making games in Unity.",
+          "I got one project."
+        ],
+        "num": "23"
+      },
+      "right": {
+        "text": [
+          "Right at the end, the client didn't like the previews. They disappeared without paying.",
+          "This was around COVID. After that, I stopped freelancing."
+        ],
+        "hand": "tried it early. it didn't work out.",
+        "num": "24"
+      },
+      "folds": [
+        {
+          "y": 320,
+          "wl": 175,
+          "wr": 175,
+          "h": 212,
+          "phi": 14,
+          "art": "art/workspace.svg"
+        },
+        {
+          "y": 560,
+          "wl": 145,
+          "wr": 145,
+          "h": 143,
+          "phi": 34,
+          "wing": {
+            "left": "art/previews.svg",
+            "right": "art/project-gone.svg"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Experience · Pause",
+      "left": {
+        "label": "Experience",
+        "heading": "Turning inward",
+        "text": [
+          "Instead of forcing the plan, I put the time into myself.",
+          "Mostly, that meant learning."
+        ],
+        "num": "25"
+      },
+      "right": {
+        "notes": [
+          {
+            "text": "quiet, for a while.",
+            "right": 90,
+            "bottom": 150,
+            "rotate": -3
+          }
+        ],
+        "num": "26"
+      },
+      "folds": [
+        {
+          "y": 440,
+          "wl": 150,
+          "wr": 150,
+          "h": 212,
+          "phi": 18,
+          "art": "art/quiet-desk.svg"
+        }
+      ]
+    },
+    {
+      "label": "Experience · The EXPO",
+      "left": {
+        "label": "Experience",
+        "heading": "Showing it to people",
+        "text": [
+          "I presented the engine at my high school EXPO.",
+          "It was out of my head and on a table, where anyone could walk up and look."
+        ],
+        "num": "27"
+      },
+      "right": {
+        "text": [
+          "The project was sponsored by Panduit, a network infrastructure company.",
+          "Someone in industry looked at what a teenager had built and took it seriously enough to support it."
+        ],
+        "num": "28"
+      },
+      "folds": [
+        {
+          "y": 290,
+          "wl": 194,
+          "wr": 194,
+          "h": 212,
+          "phi": 16,
+          "art": "art/expo-board.svg"
+        },
+        {
+          "y": 450,
+          "wl": 169,
+          "wr": 169,
+          "h": 212,
+          "phi": 20,
+          "art": "art/expo-table.svg"
+        },
+        {
+          "y": 670,
+          "wl": 75,
+          "wr": 75,
+          "h": 62,
+          "phi": 26,
+          "art": "art/placard.svg"
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "label": "Contact",
+      "left": {
+        "notes": [
+          {
+            "text": "chapter four →",
+            "right": 70,
+            "bottom": 150,
+            "rotate": -4
+          },
+          {
+            "text": "↩ contents",
+            "left": 80,
+            "bottom": 18,
+            "rotate": -3,
+            "goto": "contents"
+          }
+        ],
+        "num": "29"
+      },
+      "right": {
+        "title": {
+          "text": "CONTACT",
+          "sub": "Chapter Four"
+        },
+        "text": [
+          "The end of the book, and hopefully the start of a conversation."
+        ],
+        "num": "30"
+      },
+      "folds": []
+    },
+    {
+      "label": "Contact",
+      "left": {
+        "label": "Contact",
+        "heading": "Still asking.",
+        "text": [
+          "If you're building something and want someone who'll go look underneath it, I'd like to hear from you."
+        ],
+        "num": "31"
+      },
+      "right": {
+        "text": [
+          "<a href=\"mailto:landenbarker1@gmail.com\">landenbarker1@gmail.com</a>",
+          "<a href=\"https://github.com/LandenTy\">github.com/LandenTy</a>"
+        ],
+        "hand": "— Landen",
+        "num": "32",
+        "html": "<div class=\"pull-tab\" data-pull style=\"top:300px\">pull →</div>"
+      },
+      "folds": [
+        {
+          "y": 380,
+          "wl": 94,
+          "wr": 94,
+          "h": 212,
+          "phi": 18,
+          "art": "art/mailbox.svg"
+        },
+        {
+          "y": 520,
+          "wl": 69,
+          "wr": 69,
+          "h": 212,
+          "phi": 22,
+          "art": "art/boy-wave.svg"
+        }
+      ]
+    },
+    {
+      "id": "secret",
+      "hidden": true,
+      "label": "Secret",
+      "left": {
+        "title": {
+          "text": "SECRET",
+          "sub": "The back page"
+        },
+        "text": [
+          "You took the notes off my desk and typed the word. That's exactly the kind of curiosity this book is about."
+        ],
+        "hand": "nice.",
+        "num": "λ"
+      },
+      "right": {
+        "heading": "λ Runner",
+        "text": [
+          "Click the screen to play.",
+          "Space, ↑ or a click jumps. Dodge the bugs, grab the λs."
+        ],
+        "notes": [
+          {
+            "text": "↩ contents",
+            "right": 80,
+            "bottom": 18,
+            "rotate": -3,
+            "goto": "contents"
+          }
+        ],
+        "num": "λ"
+      },
+      "folds": [
+        {
+          "y": 420,
+          "wl": 113,
+          "wr": 113,
+          "h": 312,
+          "phi": 18,
+          "art": "art/arcade.svg"
+        },
+        {
+          "y": 612,
+          "wl": 140,
+          "wr": 140,
+          "h": 143,
+          "phi": 36,
+          "wing": {
+            "left": "art/bug.svg",
+            "right": "art/lambda-coin.svg"
+          }
+        }
+      ]
+    }
+  ]
+}

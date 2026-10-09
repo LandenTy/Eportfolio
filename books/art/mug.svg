@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <g id="mug">
+  <g id="steam" class="anim-steam">
+  <path d="M 80,40 q -12,14 0,26 q 12,12 0,24" fill="none" stroke="#1e1b18" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  <path d="M 112,34 q -12,14 0,26 q 12,12 0,24" fill="none" stroke="#1e1b18" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  </g>
+  <rect x="50" y="100" width="104" height="94" rx="12" fill="#e63946" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 154,118 q 30,0 30,26 q 0,26 -30,26" fill="none" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

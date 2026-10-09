@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 200" width="250" height="200">
+  <rect x="20" y="172" width="210" height="24" rx="6" fill="#495057" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="78" y="120" width="14" height="54" rx="3" fill="#adb5bd" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="168" y="128" width="14" height="46" rx="3" fill="#adb5bd" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="gear" class="anim-gear">
+  <path d="M128.7,98.7 L140.9,100.2 L140.9,107.8 L128.7,109.3 L126.7,118.2 L137,124.8 L133.7,131.6 L122,127.7 L116.4,134.8 L122.8,145.3 L116.9,150 L108.1,141.5 L99.9,145.4 L101.1,157.6 L93.8,159.3 L89.5,147.8 L80.5,147.8 L76.2,159.3 L68.9,157.6 L70.1,145.4 L61.9,141.5 L53.1,150 L47.2,145.3 L53.6,134.8 L48,127.7 L36.3,131.6 L33,124.8 L43.3,118.2 L41.3,109.3 L29.1,107.8 L29.1,100.2 L41.3,98.7 L43.3,89.8 L33,83.2 L36.3,76.4 L48,80.3 L53.6,73.2 L47.2,62.7 L53.1,58 L61.9,66.5 L70.1,62.6 L68.9,50.4 L76.2,48.7 L80.5,60.2 L89.5,60.2 L93.8,48.7 L101.1,50.4 L99.9,62.6 L108.1,66.5 L116.9,58 L122.8,62.7 L116.4,73.2 L122,80.3 L133.7,76.4 L137,83.2 L126.7,89.8 Z" fill="#ffbe0b" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="85" cy="104" r="14.08" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g>
+  <path d="M200.5,107.1 L208.8,108.4 L208.8,115.6 L200.5,116.9 L197.7,124.7 L203.2,131 L198.6,136.5 L191.4,132.1 L184.2,136.3 L184.4,144.7 L177.4,145.9 L174.6,138 L166.4,136.6 L161.2,143.1 L155,139.5 L158,131.7 L152.7,125.3 L144.4,126.9 L142,120.2 L149.3,116.2 L149.3,107.8 L142,103.8 L144.4,97.1 L152.7,98.7 L158,92.3 L155,84.5 L161.2,80.9 L166.4,87.4 L174.6,86 L177.4,78.1 L184.4,79.3 L184.2,87.7 L191.4,91.9 L198.6,87.5 L203.2,93 L197.7,99.3 Z" fill="#48cae4" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="175" cy="112" r="8.32" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

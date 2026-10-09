@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340" width="480" height="340">
+  <rect x="20" y="236" width="440" height="22" rx="6" fill="#c08552" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="44" y="258" width="16" height="80" rx="3" fill="#4a2c11" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="420" y="258" width="16" height="80" rx="3" fill="#4a2c11" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="lamp">
+  <ellipse cx="84" cy="232" rx="36" ry="9" fill="#3d5a80" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 84,228 L 66,150 L 128,100" fill="none" stroke="#1e1b18" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="66" cy="150" r="7" fill="#3d5a80" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M116,92 L152,70 L190,120 L150,140 Z" fill="#e63946" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="notebook" class="anim-settle">
+  <path d="M150,232 L226,236 L226,180 L156,172 Z" fill="#f8f9fa" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M226,236 L302,232 L296,172 L226,180 Z" fill="#f8f9fa" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="166" y1="190" x2="216" y2="194" fill="none" stroke="#adb5bd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="236" y1="194" x2="286" y2="190" fill="none" stroke="#adb5bd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="166" y1="201" x2="216" y2="205" fill="none" stroke="#adb5bd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="236" y1="205" x2="286" y2="201" fill="none" stroke="#adb5bd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="166" y1="212" x2="216" y2="216" fill="none" stroke="#adb5bd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="236" y1="216" x2="286" y2="212" fill="none" stroke="#adb5bd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="166" y1="223" x2="216" y2="227" fill="none" stroke="#adb5bd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="236" y1="227" x2="286" y2="223" fill="none" stroke="#adb5bd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="196" y1="250" x2="282" y2="242" fill="none" stroke="#e63946" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="books">
+  <rect x="320" y="200" width="124" height="34" rx="3" fill="#0077b6" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="330" y="166" width="112" height="34" rx="3" fill="#38b000" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="316" y="136" width="120" height="30" rx="3" fill="#e63946" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="340" y1="217" x2="420" y2="217" fill="none" stroke="#f8f9fa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <line x1="340" y1="183" x2="420" y2="183" fill="none" stroke="#f8f9fa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <line x1="340" y1="151" x2="420" y2="151" fill="none" stroke="#f8f9fa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  </g>
+</svg>

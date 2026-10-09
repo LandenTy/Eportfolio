@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landen Barker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="room" aria-hidden="true"></div>
+
+<div class="stage">
+    <div class="scaler" id="scaler">
+        <div class="world" id="world">
+
+            <!-- back wall + window (stands up at the far edge of the desk) -->
+            <div class="wall">
+                <div class="window" style="left:1900px; top:650px; width:800px; height:500px;">
+                    <div class="sky"></div>
+                    <div class="sky sky-sunset"></div>
+                    <div class="sky sky-night"><span class="moon"></span><i class="star" style="left:45%; top:13%; opacity:0.7"></i><i class="star" style="left:87%; top:7%; opacity:0.5"></i><i class="star" style="left:72%; top:10%; opacity:0.7"></i><i class="star" style="left:78%; top:7%; opacity:0.9"></i><i class="star" style="left:31%; top:6%; opacity:0.5"></i><i class="star" style="left:59%; top:30%; opacity:0.5"></i><i class="star" style="left:34%; top:9%; opacity:0.9"></i><i class="star" style="left:58%; top:7%; opacity:0.9"></i><i class="star" style="left:19%; top:18%; opacity:0.9"></i><i class="star" style="left:84%; top:41%; opacity:0.5"></i><i class="star" style="left:77%; top:41%; opacity:0.7"></i><i class="star" style="left:10%; top:18%; opacity:0.5"></i><i class="star" style="left:75%; top:58%; opacity:0.5"></i><i class="star" style="left:41%; top:30%; opacity:0.5"></i><i class="star" style="left:73%; top:11%; opacity:0.9"></i><i class="star" style="left:43%; top:39%; opacity:0.9"></i></div>
+                    <div class="cloud" style="top:16%; width:160px; animation-delay:-20s;"></div>
+                    <div class="cloud" style="top:30%; width:90px;  animation-delay:-55s; opacity:.7;"></div>
+                    <svg class="hills" viewBox="0 0 400 100" preserveAspectRatio="none">
+                        <path d="M0 60 Q60 30 120 55 T240 45 T400 50 V100 H0 Z" fill="#9c8a7a" opacity=".55"/>
+                        <path d="M0 80 Q80 55 170 75 T330 68 T400 72 V100 H0 Z" fill="#6f5e50" opacity=".8"/>
+                    </svg>
+                    <div class="glass"></div>
+                    <div class="mullions"></div>
+                </div>
+                <div class="sill" style="left:1870px; top:1150px; width:860px;"></div>
+            </div>
+
+            <!-- desk (sunlight is added by main.js) -->
+            <div class="desk" id="desk">
+                <div class="book-shadow"></div>
+            </div>
+
+            <!-- the book: pages, sheets and pop-ups are built from JSON -->
+            <div class="book" id="book">
+                <div class="back-board"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="dust" id="dust" aria-hidden="true"></div>
+
+<!-- time of day + lamp light (driven by js/toys.js) -->
+<div class="shade sunset" aria-hidden="true"></div>
+<div class="shade night" aria-hidden="true"></div>
+<div class="lamp-glow" aria-hidden="true"></div>
+
+<div class="page-label" id="pageLabel">Cover</div>
+
+<div class="controls">
+    <button class="control" id="prev" aria-label="Previous page">←</button>
+    <button class="control" id="next" aria-label="Next page">→</button>
+</div>
+
+<!-- music: data-src is the track; data-loop-seconds is its exact loop length (optional) -->
+<button class="control sound" id="soundBtn" aria-label="Music" aria-pressed="false"
+        data-src="audio/ambience.mp3" data-loop-seconds="22.610068">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/>
+        <path class="wave" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <path class="mute" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+</button>
+
+<div class="link-hint" id="linkHint"></div>
+
+<div class="toast" id="toast" role="status"></div>
+<div class="drop-hint" id="dropHint">Drop a book .json to preview it</div>
+
+<script src="js/book.js"></script>
+<script src="js/scene-loader.js"></script>
+<script src="js/main.js"></script>
+<script src="js/toys.js"></script>
+</body>
+</html>

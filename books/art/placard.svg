@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 100" width="240" height="100">
+  <g id="placard" class="anim-settle">
+  <path d="M18,92 L222,92 L208,14 L32,14 Z" fill="#f8f9fa" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="120" y="44" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="15" fill="#495057" text-anchor="middle" xml:space="preserve">project sponsored by</text>
+  <text x="120" y="74" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="24" fill="#3d5a80" text-anchor="middle" font-weight="bold" xml:space="preserve">Panduit</text>
+  </g>
+</svg>

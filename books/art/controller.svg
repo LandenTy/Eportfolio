@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200">
+  <g id="controller">
+  <path d="M 50,78 Q 120,62 190,78 Q 216,86 222,128 Q 226,166 200,170 Q 180,172 168,145 L 72,145 Q 60,172 40,170 Q 14,166 18,128 Q 24,86 50,78 Z" fill="#212529" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 56,100 h 14 v 14 h 14 v 14 h -14 v 14 h -14 v -14 h -14 v -14 h 14 Z" fill="#adb5bd" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="180" cy="96" r="8" fill="#e63946" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="198" cy="113" r="8" fill="#48cae4" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="180" cy="130" r="8" fill="#38b000" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="162" cy="113" r="8" fill="#ffbe0b" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="98" cy="138" r="13" fill="#495057" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="142" cy="138" r="13" fill="#495057" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

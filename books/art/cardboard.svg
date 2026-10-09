@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 200" width="250" height="200">
+  <g id="cardboard">
+  <path d="M14,110 L170,82 L226,150 L60,186 Z" fill="#ddb892" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 50,118 L 186,94" fill="none" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="9 8"/>
+  <path d="M 70,174 L 206,148" fill="none" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="9 8"/>
+  <path d="M88,124 L150,112 L160,146 L98,158 Z" fill="#e6ccb2" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="scissors">
+  <line x1="176" y1="64" x2="112" y2="120" fill="none" stroke="#adb5bd" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="196" y1="78" x2="120" y2="128" fill="none" stroke="#adb5bd" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="190" cy="40" r="14" fill="#e63946" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="214" cy="62" r="14" fill="#e63946" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="164" cy="90" r="4" fill="#1e1b18"/>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300" width="440" height="300">
+  <defs><clipPath id="new-editor-c1"><rect x="110" y="62" width="220" height="160" rx="6"/></clipPath></defs>
+  <g id="new-editor">
+  <rect x="8" y="8" width="424" height="284" rx="12" fill="#f8f9fa" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 8,48 L 8,20 Q 8,8 20,8 L 420,8 Q 432,8 432,20 L 432,48 Z" fill="#3d5a80" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="28" y="36" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="20" fill="#f8f9fa" text-anchor="start" font-weight="bold" xml:space="preserve">editor</text>
+  <circle cx="408" cy="28" r="7" fill="#38b000" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="386" cy="28" r="7" fill="#ffbe0b" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="364" cy="28" r="7" fill="#e63946" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="22" y="62" width="76" height="160" rx="6" fill="#dee2e6" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="30" y="76" width="12" height="12" rx="2" fill="#e63946" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="50" y="79" width="18.7" height="6" rx="3" fill="#adb5bd"/>
+  <rect x="30" y="100" width="12" height="12" rx="2" fill="#0077b6" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="50" y="103" width="28.22" height="6" rx="3" fill="#adb5bd"/>
+  <rect x="44" y="124" width="12" height="12" rx="2" fill="#38b000" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="64" y="127" width="14.2" height="6" rx="3" fill="#adb5bd"/>
+  <rect x="30" y="148" width="12" height="12" rx="2" fill="#ffbe0b" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="50" y="151" width="20.06" height="6" rx="3" fill="#adb5bd"/>
+  <rect x="30" y="172" width="12" height="12" rx="2" fill="#48cae4" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="50" y="175" width="29.58" height="6" rx="3" fill="#adb5bd"/>
+  <rect x="44" y="196" width="12" height="12" rx="2" fill="#e63946" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="64" y="199" width="15" height="6" rx="3" fill="#adb5bd"/>
+  <g clip-path="url(#new-editor-c1)">
+  <rect x="110" y="62" width="220" height="160" fill="#a2d2ff"/>
+  <rect x="110" y="138.8" width="220" height="160" fill="#38b000"/>
+  <line x1="220" y1="138.8" x2="-88" y2="232" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="220" y1="138.8" x2="-44" y2="232" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="220" y1="138.8" x2="0" y2="232" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="220" y1="138.8" x2="44" y2="232" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="220" y1="138.8" x2="88" y2="232" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="220" y1="138.8" x2="132" y2="232" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="220" y1="138.8" x2="176" y2="232" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="220" y1="138.8" x2="220" y2="232" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="220" y1="138.8" x2="264" y2="232" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="220" y1="138.8" x2="308" y2="232" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="220" y1="138.8" x2="352" y2="232" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="220" y1="138.8" x2="396" y2="232" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="220" y1="138.8" x2="440" y2="232" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="220" y1="138.8" x2="484" y2="232" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="220" y1="138.8" x2="528" y2="232" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="110" y1="144.8" x2="330" y2="144.8" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="110" y1="153.8" x2="330" y2="153.8" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="110" y1="167.3" x2="330" y2="167.3" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="110" y1="187.55" x2="330" y2="187.55" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="110" y1="217.925" x2="330" y2="217.925" fill="none" stroke="#2b9348" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="110" y1="138.8" x2="330" y2="138.8" fill="none" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="lambda" class="anim-emerge" transform="translate(178 78) scale(0.85)">
+  <path d="M 10,0 L 52,0 L 112,152 L 80,152 L 62,104 L 38,152 L 4,152 L 46,74 L 32,34 L 10,34 Z" fill="#e63946" stroke="#1e1b18" stroke-width="5.29412" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  </g>
+  <rect x="110" y="62" width="220" height="160" rx="6" fill="none" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="342" y="62" width="76" height="160" rx="6" fill="#dee2e6" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="352" y="78" width="56" height="18" rx="3" fill="#f8f9fa" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="352" y="112" width="56" height="18" rx="3" fill="#f8f9fa" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="352" y="146" width="56" height="18" rx="3" fill="#f8f9fa" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="352" y="180" width="56" height="18" rx="3" fill="#f8f9fa" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="22" y="234" width="396" height="44" rx="6" fill="#212529" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="36" y="262" font-family="'Courier New', Courier, monospace" font-size="15" fill="#80ed99" text-anchor="start" font-weight="bold" xml:space="preserve">&gt; build ok</text>
+  </g>
+</svg>

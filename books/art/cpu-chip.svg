@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 200" width="250" height="200">
+  <g id="cpu">
+  <line x1="78" y1="26" x2="78" y2="40" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="78" y1="136" x2="78" y2="150" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="96" y1="26" x2="96" y2="40" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="96" y1="136" x2="96" y2="150" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="114" y1="26" x2="114" y2="40" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="114" y1="136" x2="114" y2="150" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="132" y1="26" x2="132" y2="40" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="132" y1="136" x2="132" y2="150" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="150" y1="26" x2="150" y2="40" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="150" y1="136" x2="150" y2="150" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="168" y1="26" x2="168" y2="40" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="168" y1="136" x2="168" y2="150" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="54" y1="54" x2="68" y2="54" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="182" y1="54" x2="196" y2="54" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="54" y1="72" x2="68" y2="72" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="182" y1="72" x2="196" y2="72" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="54" y1="90" x2="68" y2="90" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="182" y1="90" x2="196" y2="90" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="54" y1="108" x2="68" y2="108" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="182" y1="108" x2="196" y2="108" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="54" y1="126" x2="68" y2="126" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="182" y1="126" x2="196" y2="126" fill="none" stroke="#adb5bd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="68" y="40" width="114" height="96" rx="10" fill="#212529" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="125" y="98" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="28" fill="#f8f9fa" text-anchor="middle" font-weight="bold" xml:space="preserve">CPU</text>
+  <rect x="40" y="160" width="52" height="32" rx="6" fill="#0077b6" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="66" y="182" font-family="'Courier New', Courier, monospace" font-size="16" fill="#f8f9fa" text-anchor="middle" font-weight="bold" xml:space="preserve">AX</text>
+  <rect x="98" y="160" width="52" height="32" rx="6" fill="#38b000" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="124" y="182" font-family="'Courier New', Courier, monospace" font-size="16" fill="#f8f9fa" text-anchor="middle" font-weight="bold" xml:space="preserve">BX</text>
+  <rect x="156" y="160" width="52" height="32" rx="6" fill="#e63946" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="182" y="182" font-family="'Courier New', Courier, monospace" font-size="16" fill="#f8f9fa" text-anchor="middle" font-weight="bold" xml:space="preserve">CX</text>
+  </g>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 608 368" width="608" height="368">
+  <rect x="10" y="336" width="286" height="20" rx="6" fill="#c08552" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="dos-pc">
+  <rect x="128" y="282" width="44" height="24" fill="#e9e3d5" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="96" y="302" width="108" height="14" rx="6" fill="#e9e3d5" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="30" y="84" width="240" height="202" rx="14" fill="#e9e3d5" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="screen" class="anim-flicker">
+  <rect x="50" y="102" width="200" height="154" rx="6" fill="#212529" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="62" y="126" font-family="'Courier New', Courier, monospace" font-size="13" fill="#c8c8c8" text-anchor="start" font-weight="bold" xml:space="preserve">C:\&gt;ASM HELLO.ASM</text>
+  <text x="62" y="147" font-family="'Courier New', Courier, monospace" font-size="13" fill="#c8c8c8" text-anchor="start" font-weight="bold" xml:space="preserve">wrote HELLO.COM</text>
+  <text x="62" y="189" font-family="'Courier New', Courier, monospace" font-size="13" fill="#c8c8c8" text-anchor="start" font-weight="bold" xml:space="preserve">C:\&gt;HELLO</text>
+  <text x="62" y="210" font-family="'Courier New', Courier, monospace" font-size="13" fill="#c8c8c8" text-anchor="start" font-weight="bold" xml:space="preserve">Hello!</text>
+  <text x="62" y="231" font-family="'Courier New', Courier, monospace" font-size="13" fill="#c8c8c8" text-anchor="start" font-weight="bold" xml:space="preserve">C:\&gt;</text>
+  </g>
+  <g id="cursor" class="anim-cursor">
+  <rect x="100" y="223" width="10" height="4" fill="#c8c8c8"/>
+  </g>
+  <rect x="206" y="266" width="44" height="8" rx="2" fill="#495057" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="62" cy="270" r="5" fill="#38b000" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <rect x="48" y="318" width="150" height="16" rx="4" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="56" y="322" width="12" height="6" rx="1.5" fill="#dee2e6" stroke="#1e1b18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="73.5" y="322" width="12" height="6" rx="1.5" fill="#dee2e6" stroke="#1e1b18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="91" y="322" width="12" height="6" rx="1.5" fill="#dee2e6" stroke="#1e1b18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="108.5" y="322" width="12" height="6" rx="1.5" fill="#dee2e6" stroke="#1e1b18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="126" y="322" width="12" height="6" rx="1.5" fill="#dee2e6" stroke="#1e1b18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="143.5" y="322" width="12" height="6" rx="1.5" fill="#dee2e6" stroke="#1e1b18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="161" y="322" width="12" height="6" rx="1.5" fill="#dee2e6" stroke="#1e1b18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="178.5" y="322" width="12" height="6" rx="1.5" fill="#dee2e6" stroke="#1e1b18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="browser">
+  <rect x="318" y="40" width="280" height="290" rx="12" fill="#f8f9fa" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 318,80 L 318,52 Q 318,40 330,40 L 586,40 Q 598,40 598,52 L 598,80 Z" fill="#2b9348" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="336" y="67" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="18" fill="#f8f9fa" text-anchor="start" font-weight="bold" xml:space="preserve">Sequoia</text>
+  <circle cx="576" cy="60" r="6" fill="#38b000" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="556" cy="60" r="6" fill="#ffbe0b" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="536" cy="60" r="6" fill="#e63946" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="332" y="92" width="252" height="24" rx="12" fill="#dee2e6" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="346" y="109" font-family="'Courier New', Courier, monospace" font-size="12" fill="#495057" text-anchor="start" font-weight="bold" xml:space="preserve">sequoia://index.html</text>
+  <text x="334" y="140" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="22" fill="#1e1b18" text-anchor="start" font-weight="bold" xml:space="preserve">Hello, HTML</text>
+  <rect x="334" y="154" width="150" height="6" rx="3" fill="#adb5bd"/>
+  <rect x="334" y="167" width="120" height="6" rx="3" fill="#adb5bd"/>
+  <rect x="334" y="180" width="140" height="6" rx="3" fill="#adb5bd"/>
+  <g id="table">
+  <rect x="334" y="200" width="126" height="60" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="334" y1="220" x2="460" y2="220" fill="none" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="334" y1="240" x2="460" y2="240" fill="none" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="376" y1="200" x2="376" y2="260" fill="none" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="418" y1="200" x2="418" y2="260" fill="none" stroke="#1e1b18" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="334" y="200" width="126" height="20" fill="#dee2e6" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="svg-tree">
+  <rect x="523" y="226" width="12" height="34" rx="2" fill="#9c4a2f" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M529,138 L556,196 L502,196 Z" fill="#2b9348" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M529,162 L564,232 L494,232 Z" fill="#38b000" stroke="#1e1b18" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="inputs">
+  <line x1="336" y1="296" x2="430" y2="296" fill="none" stroke="#495057" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="396" cy="296" r="9" fill="#0077b6" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="452" cy="296" r="8" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="474" cy="296" r="8" fill="#f8f9fa" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="474" cy="296" r="3.5" fill="#1e1b18"/>
+  <rect x="500" y="284" width="76" height="26" rx="8" fill="#0077b6" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="538" y="302" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="14" fill="#f8f9fa" text-anchor="middle" font-weight="bold" xml:space="preserve">Go</text>
+  </g>
+  </g>
+</svg>

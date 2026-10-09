@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 200" width="230" height="200">
+  <g id="boxes">
+  <rect x="20" y="112" width="140" height="84" fill="#ddb892" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="90" y1="112" x2="90" y2="196" fill="none" stroke="#b08968" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="90" y="166" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-size="18" fill="#4a2c11" text-anchor="middle" font-weight="bold" xml:space="preserve">BOOKS</text>
+  <rect x="44" y="44" width="104" height="70" fill="#ddb892" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="96" y1="44" x2="96" y2="114" fill="none" stroke="#b08968" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 120,64 l 0,30 M 112,72 l 8,-8 l 8,8" fill="none" stroke="#1e1b18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="166" y="140" width="52" height="56" fill="#ddb892" stroke="#1e1b18" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="192" y1="140" x2="192" y2="196" fill="none" stroke="#b08968" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
